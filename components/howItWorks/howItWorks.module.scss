@@ -41,7 +41,8 @@
         font-weight: 600;
         text-align: center;
         color: var(--primary-color);
-        font-family: Poppins-Regular;
+        // font-family: Poppins-Regular;
+        font-family: var(--font-poppins);
         white-space: nowrap;
     }
 
@@ -146,6 +147,9 @@
     }
 
     .card {
+        .card_img_container{
+            max-width: 80%;
+        }
         >svg {
             // transform: rotate(90deg);
             right: initial;
@@ -157,6 +161,14 @@
 
         &:nth-child(2)>svg {
             display: inline-block;
+        }
+    }
+}
+@media (max-width: 250px) {
+
+    .card {
+        .card_img_container{
+            max-width: initial;
         }
     }
 }

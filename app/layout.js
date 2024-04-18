@@ -1,12 +1,17 @@
 // import { Inter } from "next/font/google";
-import { Roboto } from "next/font/google";
+import { Roboto, Poppins } from "next/font/google";
 import "./globals.css";
 import '@/styles/typography.scss'
-import Navbar from "@/components/shared/navbar/Navbar";
 
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ['100', '300', '400', '500', '700', '900'],
+  variable: "--font-roboto",
+});
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  variable: "--font-poppins",
 });
 
 export const metadata = {
@@ -32,7 +37,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={`${roboto.className} ${poppins.variable}`}>
         {/* <Navbar /> */}
         {children}
       </body>

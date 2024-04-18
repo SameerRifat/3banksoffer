@@ -51,10 +51,12 @@ const HeroSection = () => {
                                 </div>
                             ))}
                         </div>
-                        <Link href='#' className={css.hero_btn}>
-                            Order 3 non-binding offers
-                        </Link>
-                        <span className={css.small_text}>It’s way simple</span>
+                        <div className={css.btn_container}>
+                            <Link href='#' className={css.hero_btn}>
+                                Order 3 non-binding offers
+                            </Link>
+                            <span className={css.small_text}>It’s way simple</span>
+                        </div>
                     </div>
                     <div className={css.hero_right}>
                         <div className={css.hero_image}>

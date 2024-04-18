@@ -28,10 +28,10 @@
   position: relative;
 } */
 
-@font-face {
+/* @font-face {
   font-family: Poppins-Regular;
   src: url("/fonts/Poppins/Poppins-Regular.ttf");
-}
+} */
 
 .container {
   width: 90%;
