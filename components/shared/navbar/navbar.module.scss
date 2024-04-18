@@ -1,0 +1,55 @@
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navlinks {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.navlink {
+    color: var(--text1);
+}
+
+.logo{
+    >a{
+        color: var(--black);
+    }
+    margin: 0 3rem;
+}
+
+.menu_icon{
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .navlinks {
+        display: none;
+    }
+    .menu_icon {
+        display: block;
+        width: 35px;
+        height: 35px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s;
+        >svg{
+            color: var(--text1);
+        }
+    }
+    .navbar{
+        height: 80px;
+        justify-content: flex-start;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+}

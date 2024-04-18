@@ -1,0 +1,162 @@
+.how_works_container {
+    margin: 5rem 0;
+    width: 90%;
+    max-width: var(--max-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+
+    .card_img_container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        padding-top: calc(70 / 105 * 100%);
+    }
+
+    .card_img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // object-fit: cover;
+    }
+
+    .card_title {
+        font-weight: 600;
+        text-align: center;
+        color: var(--primary-color);
+        font-family: Poppins-Regular;
+        white-space: nowrap;
+    }
+
+    .card_description {
+        text-align: center;
+    }
+
+    >svg {
+        color: var(--primary-color);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: -2.5rem;
+        top: 35%;
+        // transform: translate(-50%, -50%);
+        transform: translate(50%, -50%);
+    }
+
+    &:last-child>svg {
+        display: none;
+    }
+}
+
+@media (max-width: 1250px) {
+    .cards {
+        gap: 3rem;
+    }
+
+    .card {
+        .card_title {
+            white-space: initial;
+        }
+
+        >svg {
+            right: -1.5rem;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .cards {
+        gap: 2rem;
+    }
+
+    .card {
+        >svg {
+            right: -1rem;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5rem;
+        row-gap: 4rem;
+    }
+
+    .card {
+        >svg {
+            right: -2.5rem;
+        }
+
+        &:nth-child(2)>svg {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 670px) {
+    .cards {
+        gap: 3rem;
+    }
+
+    .card {
+        >svg {
+            right: -1.5rem;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .cards {
+        gap: 2rem;
+    }
+
+    .card {
+        >svg {
+            right: -1rem;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .how_works_container {
+        margin-top: 3rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+    }
+
+    .card {
+        >svg {
+            // transform: rotate(90deg);
+            right: initial;
+            top: initial;
+            left: 50%;
+            bottom: -2.5rem;
+            transform: translate(-50%, 50%) rotate(90deg);
+        }
+
+        &:nth-child(2)>svg {
+            display: inline-block;
+        }
+    }
+}
