@@ -46,10 +46,14 @@
         }
     }
     .navbar{
-        height: 80px;
         justify-content: flex-start;
     }
     .logo{
         margin: 0 auto;
+    }
+}
+@media (max-width: 500px) {
+    .navbar{
+        height: 60px;
     }
 }
