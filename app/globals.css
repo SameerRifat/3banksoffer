@@ -1,10 +1,9 @@
 :root {
-  --max-width: 80rem;
+  --max-width: 1250px;
 
   --primary-color: #005F31;
-  --text1: rgba(0, 0, 0, 0.44);
-  --text2: rgba(0, 0, 0, 0.59);
-  /* --secondary-text: #D9F6FF; */
+  --text-primary: #686868;
+  --text-secondary: rgba(0, 0, 0, 0.44);
   --black: #263238;
   --white: #fff;
   /* --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",

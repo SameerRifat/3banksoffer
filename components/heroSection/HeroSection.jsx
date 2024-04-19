@@ -24,7 +24,7 @@ const HeroSection = () => {
                     <Image
                         src={'/hero_bg2.png'}
                         alt='bg'
-                        layout="fill"
+                        fill
                         quality={100}
                         priority
                     />

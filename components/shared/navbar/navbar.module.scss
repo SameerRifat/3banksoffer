@@ -12,7 +12,7 @@
 }
 
 .navlink {
-    color: var(--text1);
+    color: var(--text-secondary);
 }
 
 .logo{
@@ -42,7 +42,7 @@
         cursor: pointer;
         transition: all 0.3s;
         >svg{
-            color: var(--text1);
+            color: var(--text-secondary);
         }
     }
     .navbar{

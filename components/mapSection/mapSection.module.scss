@@ -1,0 +1,94 @@
+.map_container {
+    // border: 4px solid red;
+    margin-bottom: 5rem;
+}
+
+.heading_wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+.map_images {
+    border: 4px solid red;
+    position: relative;
+}
+
+.card_img_container {
+    width: 100%;
+    height: 540px;
+    // max-width: 80rem;
+    // margin-left: auto;
+    // margin-right: auto;
+    // border: 4px solid blue;
+    position: relative;
+    overflow: hidden;
+    z-index: -99;
+
+    >img {
+        // border: 2px solid red;
+        position: absolute;
+        top: 0;
+        right: 0;
+        // transform: translateX(14.5%);
+        width: 100%;
+        // height: ;
+        // object-fit: cover;
+    }
+}
+
+.location {
+    position: absolute;
+    border: 4px solid #005F31;
+    border-radius: 100%;
+    &::after{
+        content: '';
+        width: 14px;
+        height: 14px;
+        background: #005F31;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 100%);
+        clip-path: polygon(50% 100%, 6.7% 25%, 93.3% 25%);
+    }
+    >img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+}
+.location.map1{
+    top: 0.8rem;
+    left: 47.5%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 110px;
+}
+.location.map2{
+    top: 7.7rem;
+    left: 33.1%;
+    transform: translateX(-50%);
+    width: 95px;
+    height: 95px;
+}
+
+.tooltip{
+    background: white !important;
+    border-radius: 10px !important;
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.03) !important;
+    opacity: 1 !important;
+}
+.tooltip_content{
+    width: 230px;
+    // padding: 0.5rem;
+    .title{
+        color: var(--primary-color);
+    }
+    .descrption{
+        color: var(--text-primary);
+        font-size: 11px;
+    }
+}

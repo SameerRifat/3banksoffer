@@ -11,25 +11,25 @@ const data = [
         _id: 1,
         iconImage: '/how_it_works/icon1.svg',
         title: 'Submit your assignment',
-        description: ['Briefly describe the bank you wish', 'to have carried out']
+        description: ['Briefly describe the bank you wish ', 'to have carried out']
     },
     {
         _id: 2,
         iconImage: '/how_it_works/icon2.svg',
         title: 'The offer is processed',
-        description: ['Our service department will', 'contact by phone']
+        description: ['Our service department will ', 'contact by phone']
     },
     {
         _id: 3,
         iconImage: '/how_it_works/icon3.svg',
         title: 'You receive the Offers',
-        description: ['The selected bank will give you an', 'offer to suits you best']
+        description: ['The selected bank will give you an ', 'offer to suits you best']
     },
     {
         _id: 4,
         iconImage: '/how_it_works/icon4.svg',
         title: 'You choose the offer',
-        description: ['Choose freely between the three', 'offers and all done']
+        description: ['Choose freely between the three ', 'offers and all done']
     },
 ]
 

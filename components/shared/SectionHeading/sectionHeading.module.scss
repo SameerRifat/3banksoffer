@@ -4,4 +4,9 @@
     color: var(--primary-color);
     // font-family: Poppins-Regular;
     font-family: var(--font-poppins);
+    @media (max-width: 400px) {
+        >bg{
+            display: none;
+        }
+    }
 }

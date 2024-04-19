@@ -70,7 +70,7 @@
             }
 
             .benefit {
-                color: var(--text2);
+                color: var(--text-primary);
             }
         }
     }
@@ -81,11 +81,13 @@
         color: var(--white);
         border-radius: 2rem;
         font-family: var(--font-poppins);
+        text-align: center;
+        text-wrap: wrap;
     }
 
     .small_text {
         display: block;
-        color: var(--text2);
+        color: var(--text-primary);
         font-size: 13px;
         margin-top: 1.2rem;
     }
@@ -118,7 +120,7 @@
         }
 
         .video_text {
-            color: var(--text2);
+            color: var(--text-primary);
             position: absolute;
             top: -5px;
             right: 0;
@@ -211,6 +213,11 @@
             width: fit-content;
             margin-left: auto;
             margin-right: auto;
+            text-align: center;
+        }
+        .benefits{
+            width: fit-content;
+            margin: 2rem auto;
         }
     }
 }

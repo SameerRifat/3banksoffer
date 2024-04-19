@@ -1,5 +1,6 @@
 .how_works_container {
-    margin: 5rem 0;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
     width: 90%;
     max-width: var(--max-width);
     margin-left: auto;
@@ -37,6 +38,12 @@
         // object-fit: cover;
     }
 
+    &:first-child {
+        .card_img_container {
+            max-width: 90%;
+        }
+    }
+
     .card_title {
         font-weight: 600;
         text-align: center;
@@ -48,12 +55,13 @@
 
     .card_description {
         text-align: center;
+        color: var(--text-primary);
     }
 
     >svg {
         color: var(--primary-color);
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
         position: absolute;
         right: -2.5rem;
         top: 35%;
@@ -143,40 +151,44 @@
 
     .cards {
         grid-template-columns: 1fr;
-        gap: 5rem;
+        gap: 3rem;
     }
 
     .card {
-        .card_img_container{
+        .card_img_container {
             max-width: 80%;
         }
+
         >svg {
             // transform: rotate(90deg);
             right: initial;
             top: initial;
             left: 50%;
-            bottom: -2.5rem;
+            bottom: -1.5rem;
             transform: translate(-50%, 50%) rotate(90deg);
         }
 
         &:nth-child(2)>svg {
             display: inline-block;
         }
-        &:first-child{
-            .card_img_container{
+
+        &:first-child {
+            .card_img_container {
                 max-width: 70%;
             }
         }
     }
 }
+
 @media (max-width: 250px) {
 
     .card {
-        .card_img_container{
+        .card_img_container {
             max-width: initial;
         }
-        &:first-child{
-            .card_img_container{
+
+        &:first-child {
+            .card_img_container {
                 max-width: 80%;
             }
         }
