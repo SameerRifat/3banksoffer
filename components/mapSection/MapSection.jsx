@@ -27,7 +27,7 @@ const MapSection = () => {
                         priority
                     />
                 </div>
-                <Tooltip id={`tooltip-1`} place='right-end' delayShow={300} delayHide={300} arrowColor="#005F31" className={css.tooltip} >
+                <Tooltip id={`tooltip-1`} place='right-end' delayShow={300} delayHide={300} arrowColor="#fff" className={css.tooltip} >
                     <TooltipContent title={"Copenhagen"} descrption1={"Lorem Ispum Lorem ispum lorem ispum"} descrption2={"Lorem Ispum Lorem ispum lorem ispum"}/>
                 </Tooltip>
                 <div className={cx(css.location, css.map2)} data-tooltip-id={`tooltip-2`}>
@@ -40,7 +40,20 @@ const MapSection = () => {
                         priority
                     />
                 </div>
-                <Tooltip id={`tooltip-2`} place='right-end' delayShow={300} delayHide={300} arrowColor="#005F31" className={css.tooltip} >
+                <Tooltip id={`tooltip-2`} place='right-end' delayShow={300} delayHide={300} arrowColor="#fff" className={css.tooltip} >
+                    <TooltipContent title={"Copenhagen"} descrption1={"Lorem Ispum Lorem ispum lorem ispum"} descrption2={"Lorem Ispum Lorem ispum lorem ispum"}/>
+                </Tooltip>
+                <div className={cx(css.location, css.map3)} data-tooltip-id={`tooltip-3`}>
+                    <Image
+                        src={'/mapSection/map3.png'}
+                        alt='map'
+                        width={120}
+                        height={120}
+                        quality={100}
+                        priority
+                    />
+                </div>
+                <Tooltip id={`tooltip-3`} place='right-end' delayShow={300} delayHide={300} arrowColor="#fff" className={css.tooltip} >
                     <TooltipContent title={"Copenhagen"} descrption1={"Lorem Ispum Lorem ispum lorem ispum"} descrption2={"Lorem Ispum Lorem ispum lorem ispum"}/>
                 </Tooltip>
                 <div className={css.card_img_container}>

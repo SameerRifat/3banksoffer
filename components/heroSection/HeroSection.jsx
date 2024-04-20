@@ -30,7 +30,7 @@ const HeroSection = () => {
                     />
                 </div>
                 <Navbar />
-                <div className={cx('container', css.hero)}>
+                <div className={cx('custom_container', css.hero)}>
                     <div className={css.hero_left}>
                         <h2 className={cx('typoH2', css.hero_title)}>
                             Find the right one for your {" "}

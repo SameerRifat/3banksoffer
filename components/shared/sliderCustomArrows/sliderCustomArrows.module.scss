@@ -1,0 +1,47 @@
+.customNextArrow,
+.customPrevArrow {
+    border-radius: 100%;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    cursor: pointer;
+
+    svg {
+        color: var(--primary-color);
+    }
+    @media (max-width: 600px) {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.customNextArrow {
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+.customPrevArrow {
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+@media (max-width: 300px) {
+    .customNextArrow {
+        transform: translate(45%, -50%);
+    }
+    
+    .customPrevArrow {
+        transform: translate(-45%, -50%);
+    }
+}
+@media (max-width: 270px) {
+    .customNextArrow {
+        transform: translate(40%, -50%);
+    }
+    
+    .customPrevArrow {
+        transform: translate(-40%, -50%);
+    }
+}

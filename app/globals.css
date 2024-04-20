@@ -26,13 +26,7 @@
   font-family: 'inter', sans-serif;
   position: relative;
 } */
-
-/* @font-face {
-  font-family: Poppins-Regular;
-  src: url("/fonts/Poppins/Poppins-Regular.ttf");
-} */
-
-.container {
+.custom_container {
   width: 90%;
   max-width: var(--max-width);
   margin-left: auto;

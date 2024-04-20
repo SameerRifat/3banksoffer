@@ -19,7 +19,7 @@ const Navbar = () => {
 
     return (
         <>
-            <header className={cx('container', css.navbar)}>
+            <header className={cx('custom_container', css.navbar)}>
                 <div className={css.menu_icon} onClick={() => setOpenSidebar((prevState) => !prevState)}>
                     <Iconify
                         icon="basil:menu-outline"

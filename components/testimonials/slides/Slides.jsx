@@ -18,13 +18,13 @@ const testimonialsData = [
     {
         _id: 2,
         description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis voluptatibus unde nihil quia et nisi, minus aperiam ullam. Voluptatum, accusamus porro? Dolorem id, culpa saepe aliquid optio error provides best features to organize your expenses in one application and save more money',
-        name: 'Lena Larsen',
+        name: 'John Doe',
         date: 'March 04, 2023'
     },
     {
         _id: 3,
         description: ' recusandae veritatis distinctio commodi, omnis est a molestiae odit numquam debitis tenetur, fuga odio minus accusantium velit veniam ab! quae maiores eaque recusandae veritatis distinctio commodi, omnis est.provides best features to organize your expenses in one application and save more money',
-        name: 'Lena Larsen',
+        name: 'Grayson',
         date: 'June 29, 2024'
     },
 ]

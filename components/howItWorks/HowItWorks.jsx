@@ -35,7 +35,7 @@ const data = [
 
 const HowItWorks = () => {
     return (
-        <section className={cx('container', css.how_works_container)}>
+        <section className={cx('custom_container', css.how_works_container)}>
             <SectionHeading>That’s how easy it is to obtain bank offers</SectionHeading>
 
             <div className={css.cards}>
