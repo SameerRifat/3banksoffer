@@ -13,7 +13,7 @@ const testimonialsData = [
         _id: 1,
         description: 'Ajamaker provides best features to organize your expenses in one application and save more money Ajamaker provides best features to organize your expenses in one application and save more money provides best features to organize your expenses in one application and save more money',
         name: 'Lena Larsen',
-        date: 'April 10, 2024'
+        date: 'April 10, 2026'
     },
     {
         _id: 2,
@@ -61,7 +61,7 @@ const Slides = () => {
                         {testimonialsData.map((item) => {
                             return (
                                 <div className={`${css.tetimonial}`} key={item._id}>
-                                    <p className={cx("typoBody2", css.description)}>
+                                    <p className={cx("typoBody1", css.description)}>
                                         {item.description}
                                     </p>
                                     <p className={cx('typoBody1', css.name)}>{item.name}</p>

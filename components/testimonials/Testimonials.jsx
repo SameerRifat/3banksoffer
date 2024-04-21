@@ -15,19 +15,19 @@ const data = [
         _id: 1,
         iconImage: '/testimonials/icon1.svg',
         numbers: 656000,
-        description: ['Contracts since the year ', '2000'],
+        description: 'Contracts since the year 2000',
     },
     {
         _id: 2,
         iconImage: '/testimonials/icon2.svg',
         numbers: 1671,
-        description: ['Active customers around ', 'the world'],
+        description: 'Active customers around the world',
     },
     {
         _id: 3,
         iconImage: '/testimonials/icon3.svg',
         numbers: 90,
-        description: ['Success rate on ', 'submitted contracts'],
+        description: 'Success rate on submitted contracts',
     },
 ]
 
@@ -72,8 +72,8 @@ const Testimonials = () => {
                                         </div>
                                     </div>
                                     <div className={css.card_text}>
-                                        <motion.h5
-                                            className={cx('typoH5', css.card_title)}
+                                        <motion.h4
+                                            className={cx('typoH4', css.card_title)}
                                         >
                                             {inView ? (
                                                 <CountUp
@@ -85,14 +85,9 @@ const Testimonials = () => {
                                                 >
                                                 </CountUp>
                                             ) : 1}
-                                        </motion.h5>
-                                        <p className={cx("typoBody2", css.card_description1)}>
-                                            {item.description[0]}
-                                            <br />
-                                            {item.description[1]}
-                                        </p>
-                                        <p className={cx("typoBody2", css.card_description2)}>
-                                            {item.description[0]} {" "} {item.description[1]}
+                                        </motion.h4>
+                                        <p className={cx("typoBody1", css.card_description)}>
+                                            {item.description}
                                         </p>
                                     </div>
                                 </div>
@@ -102,11 +97,11 @@ const Testimonials = () => {
                 </div>
                 <div className={cx(css.column2)}>
                     <div className={css.testimonical_card}>
-                        <h5 className={cx("typoH5", css.card_heading)}>
+                        <h4 className={cx("typoH4", css.card_heading)}>
                             This is how customers rate {" "}
                             <br />
                             3bankoffers.com
-                        </h5>
+                        </h4>
                         <Slides />
                     </div>
                 </div>

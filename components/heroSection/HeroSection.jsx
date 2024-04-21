@@ -34,7 +34,7 @@ const HeroSection = () => {
                     <div className={css.hero_left}>
                         <h2 className={cx('typoH2', css.hero_title)}>
                             Find the right one for your {" "}
-                            <br />
+                            {/* <br /> */}
                             project - Get 3 banks offers
                         </h2>
                         <div className={css.benefits}>
@@ -72,7 +72,7 @@ const HeroSection = () => {
                         <div className={css.video_wrapper}>
                             <div className={css.video_wrapper_left}>
                                 <img src="/arrow_svg.svg" alt="icon" />
-                                <p className={cx("typoBody2", css.video_text)}>
+                                <p className={cx("typoBody2", css.video_text, css.video_text1)}>
                                     This is how it works
                                 </p>
                             </div>
@@ -90,6 +90,9 @@ const HeroSection = () => {
                                     icon="mage:play-fill"
                                 />
                             </div>
+                            <p className={cx("typoBody2", css.video_text, css.video_text2)}>
+                                This is how it works
+                            </p>
                         </div>
                     </div>
                 </div>

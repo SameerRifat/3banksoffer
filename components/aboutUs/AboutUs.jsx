@@ -70,10 +70,10 @@ const AboutUs = () => {
                             className={css.image_bg}
                         />
                         <div className={css.about_text}>
-                            <p className={cx('typoCaption', css.descrption)}>
+                            <p className={cx('typoBody1', css.descrption)}>
                                 It provides quality assurance that 3banksoffer has carried out a screening of the craftsmen before they are assigned to us. I would definitely recommend 3byggetilbud.dk to others
                             </p>
-                            <p className={cx('typoCaption', css.name)}>
+                            <p className={cx('typoBody1', css.name)}>
                                 Patrick Juel, Contractor
                             </p>
 

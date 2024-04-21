@@ -10,8 +10,8 @@
 .cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 5rem;
-    margin-top: 3rem;
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .card {
@@ -63,7 +63,7 @@
         width: 30px;
         height: 30px;
         position: absolute;
-        right: -2.5rem;
+        right: -1rem;
         top: 35%;
         // transform: translate(-50%, -50%);
         transform: translate(50%, -50%);
@@ -152,6 +152,7 @@
     .cards {
         grid-template-columns: 1fr;
         gap: 3rem;
+        margin-top: 0.5rem;
     }
 
     .card {

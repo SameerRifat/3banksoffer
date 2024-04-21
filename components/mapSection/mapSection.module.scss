@@ -56,6 +56,11 @@
     transform: translateX(-50%);
     width: 110px;
     height: 110px;
+    transition: all 0.3s ease;
+    &:hover{
+        scale: 1.1;
+        margin-left: 4px;
+    }
 }
 
 .location.map2 {
@@ -64,12 +69,21 @@
     transform: translateX(-50%);
     width: 95px;
     height: 95px;
+    transition: all 0.3s ease;
+    &:hover{
+        scale: 1.1;
+        margin-left: 5px;
+    }
 }
 .location.map3 {
     bottom: 5rem;
     left: 52%;
     width: 95px;
     height: 95px;
+    transition: all 0.3s ease;
+    &:hover{
+        scale: 1.1;
+    }
 }
 
 @media (min-width: 1350px) {
@@ -386,10 +400,23 @@
     box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.03) !important;
     opacity: 1 !important;
     z-index: 99;
+    max-width: 230px;
+    animation: fadeIn 1s ease forwards;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0 !important;
+        max-width: 150px !important;
+    }
+
+    to {
+        opacity: 1 !important;
+        max-width: 230px !important;
+    }
 }
 
 .tooltip_content {
-    width: 230px;
+    // width: 100%;
 
     // padding: 0.5rem;
     .title {

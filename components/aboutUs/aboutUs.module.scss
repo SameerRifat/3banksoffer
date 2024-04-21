@@ -11,7 +11,7 @@
 
 .slides_container {
     width: 100%;
-    max-width: 980px;
+    max-width: 974px;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -29,7 +29,7 @@
     // padding: 0 2rem;
     // padding-top: 10px;
     position: relative;
-    max-width: 980px;
+    max-width: 974px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1rem;
@@ -76,15 +76,19 @@
 
 .about_text_wrapper {
     position: absolute;
-    left: 50%;
+    left: 45%;
     bottom: 0;
-    transform: translateY(50%);
-    width: 300px;
+    transform: translateY(60%);
+    width: 400px;
 
     .ellipse {
         width: 100%;
-        height: 170px;
+        height: 250px;
         position: relative;
+        .image_bg{
+            width: 100%;
+            height: 100%;
+        }
 
         .about_text {
             position: absolute;
@@ -95,31 +99,33 @@
 
             .descrption {
                 width: 80%;
-                margin-left: 3.2rem;
-                margin-top: 2.4rem;
-                font-size: 11px;
+                margin-left: 17%;
+                margin-top: 13%;
                 text-align: center;
                 color: var(--text-primary);
             }
 
             .name {
                 text-align: right;
-                margin-right: 1.8rem;
-                font-size: 11px;
+                margin-right: 15%;
                 color: var(--primary-color);
                 margin-top: 0.5rem;
             }
 
             .quotes {
                 position: absolute;
-                left: 1rem;
-                top: 65%;
+                left: 2rem;
+                top: 63%;
             }
         }
     }
 }
 
 @media (max-width: 1050px) {
+    .about_text_wrapper {
+        left: 40%;
+        // transform: translateY(60%);
+    }
     .video {
         display: block;
         width: 90%;
@@ -128,9 +134,15 @@
     }
 }
 
+@media (max-width: 900px) {
+    .about_text_wrapper {
+        left: 30%;
+        transform: translateY(65%);
+    }
+}
 @media (max-width: 740px) {
     .about_text_wrapper {
-        left: 40%;
+        left: 25%;
     }
 }
 
@@ -145,13 +157,14 @@
         }
     }
     .about_container{
-        margin-bottom: 15rem;
+        margin-bottom: 17rem;
     }
     .about_text_wrapper {
         left: 0;
         bottom: 0;
-        transform: translateY(90%);
+        transform: translateY(80%);
         width: 100%;
+        // border: 2px solid red;
 
         .ellipse {
             height: 250px;
@@ -164,17 +177,17 @@
                     width: 60%;
                     margin-left: 23%;
                     margin-top: 5rem;
-                    font-size: 12px;
+                    // font-size: 12px;
                 }
 
                 .name {
-                    margin-right: 20%;
-                    margin-top: 1.5rem;
-                    font-size: 12px;
+                    margin-right: 25%;
+                    // margin-top: 1.5rem;
+                    // font-size: 12px;
                 }
 
                 .quotes {
-                    left: 10%;
+                    left: 15%;
                     top: 55%;
                 }
             }
@@ -240,24 +253,54 @@
         z-index: -99;
         .ellipse {
             >img {
-                object-fit: cover;
+                // object-fit: cover;
                 width: 100%;
                 height: 100%;
             }
 
             .about_text {
                 .descrption {
-                    width: 80%;
-                    margin-left: 15%;
-                    margin-top: 20%;
+                    width: 75%;
+                    margin-left: 18%;
+                    margin-top: 15%;
+                }
+                // .name {
+                //     margin-right: 10%;
+                //     margin-top: 1rem;
+                // }
+                .quotes {
+                    left: 7%;
+                    top: 65%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .about_text_wrapper {
+        .ellipse {
+            >img {
+                object-fit: cover;
+            }
+
+            .about_text {
+                .descrption {
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 22%;
+                    font-size: 14px;
                 }
                 .name {
-                    margin-right: 10%;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
                     margin-top: 1rem;
+                    text-align: center;
                 }
                 .quotes {
-                    left: 4%;
-                    top: 70%;
+                    left: 3%;
+                    top: 75%;
                 }
             }
         }
