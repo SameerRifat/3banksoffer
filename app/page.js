@@ -5,6 +5,8 @@ import HowItWorks from "@/components/howItWorks/HowItWorks";
 import Testimonials from "@/components/testimonials/Testimonials";
 import MapSection from "@/components/mapSection/MapSection";
 import AboutUs from "@/components/aboutUs/AboutUs";
+import Advantages from "@/components/Advantages/Advantages";
+import GetOffers from "@/components/getOffers/GetOffers";
 // import HeroSection from "@/components/heroSection/heroSection";
 
 export default function Home() {
@@ -15,6 +17,8 @@ export default function Home() {
       <Testimonials />
       <MapSection />
       <AboutUs />
+      <Advantages />
+      <GetOffers />
     </>
   );
 }

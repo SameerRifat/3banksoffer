@@ -2,6 +2,7 @@
 import { Roboto, Poppins } from "next/font/google";
 import "./globals.css";
 import '@/styles/typography.scss'
+import Footer from "@/components/shared/Footer/Footer";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
       <body className={`${roboto.className} ${poppins.variable}`}>
         {/* <Navbar /> */}
         {children}
+        <Footer />
       </body>
     </html>
   );
