@@ -40,7 +40,7 @@ const FooterLinks = () => {
                                 <Iconify
                                     icon={item.icon}
                                     color="rgba(217, 217, 217, 1)"
-                                    width={16}
+                                    width={20}
                                 />
                                 {item.link ? (
                                     <Link href={item.link} target='_blank'>{item.title}</Link>

@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import Iconify from "@/components/shared/iconify/iconify";
 import { navLinks } from './navData'
+import MobileSidebar from './MobileSidebar/MobileSidebar'
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -57,6 +58,7 @@ const Navbar = () => {
                     })}
                 </div>
             </header>
+            <MobileSidebar openSidebar={openSidebar} setOpenSidebar={setOpenSidebar} />
         </>
     )
 }

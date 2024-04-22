@@ -12,7 +12,7 @@
 }
 .links_category{
     .links_heading{
-        font-size: 16px;
+        font-size: 1.2rem;
     }
     .links{
         display: flex;
@@ -24,7 +24,7 @@
             display: flex;
             align-items: center;
             gap: 7px;
-            font-size: 14px;
+            font-size: 16px;
         }
         a{
             color: var(--white);
@@ -36,11 +36,11 @@
             gap: 1.5rem;
         }
     }
-    @media (max-width: 330px) {
-        .links{
-            .link{
-                font-size: 12px;
-            }
-        }
-    }
+    // @media (max-width: 330px) {
+    //     .links{
+    //         .link{
+    //             font-size: 12px;
+    //         }
+    //     }
+    // }
 }

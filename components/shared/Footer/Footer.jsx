@@ -28,7 +28,7 @@ const Footer = () => {
                 <div className={css.footer_row1}>
                     <div className={css.company_info}>
                         <Link href='/' className={css.logo}>
-                            Main Logo
+                            <h3>Main Logo</h3>
                             {/* <img
                                 src='/cu-logo.svg'
                                 alt='logo'
