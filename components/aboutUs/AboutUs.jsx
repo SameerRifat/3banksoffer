@@ -27,7 +27,7 @@ const AboutUs = () => {
     };
 
     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
-
+    const [isLoading, setIsLoading] = useState(true);
     const videoRef = useRef();
 
     const handleVideoIconClick = () => {
@@ -42,13 +42,21 @@ const AboutUs = () => {
         }
     };
 
+    const handleVideoError = () => {
+        setIsLoading(false);
+    };
+
+    const handleVideoEnded = () => {
+        setIsLoading(false);
+    };
+
     return (
         <section className={cx(css.about_container)}>
             <div className={css.heading_wrapper}>
                 <SectionHeading>What do the banks say about us</SectionHeading>
             </div>
             <div className={css.video_wrapper}>
-                <video className={css.video} ref={videoRef}>
+                <video className={css.video} poster='/video_thumbnail.png' ref={videoRef} onEnded={handleVideoEnded} onError={handleVideoError}>
                     <source src="/video2.mp4" type="video/mp4" />
                 </video>
                 {!isVideoPlaying ? (
@@ -93,8 +101,60 @@ const AboutUs = () => {
     );
 };
 
-// Export the component
 export default AboutUs;
+
+
+// 'use client'
+// import React, { useEffect, useState } from 'react';
+// import { SectionHeading } from '@/components/shared/SectionHeading/SectionHeading';
+// import css from './aboutUs.module.scss';
+// import cx from 'classnames';
+// import Iconify from '@/components/shared/iconify/iconify';
+// import ReactPlayer from 'react-player';
+
+// const AboutUs = () => {
+
+//     const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+
+//     const handleVideoIconClick = () => {
+//         setIsVideoPlaying(!isVideoPlaying);
+//     };
+
+//     return (
+//         <section className={cx(css.about_container)}>
+//             <div className={css.heading_wrapper}>
+//                 <SectionHeading>What do the banks say about us</SectionHeading>
+//             </div>
+//             <div className={css.video_wrapper}>
+//                 <ReactPlayer
+//                     url="/video2.mp4"
+//                     playing={isVideoPlaying}
+//                     // controls
+//                     width="100%"
+//                     height="100%"
+//                     onPlay={() => setIsVideoPlaying(true)}
+//                     onPause={() => setIsVideoPlaying(false)}
+//                     onError={() => console.log('Error loading video')}
+//                     onEnded={() => console.log('Video ended')}
+//                     // style={{borderRadius: '10px'}}
+//                     fallback={<div className={css.loader}>Loadding...</div>}
+//                     className={css.video}
+//                 />
+//                 {!isVideoPlaying ? (
+//                     <span className={css.icon} onClick={handleVideoIconClick}>
+//                         <Iconify icon="mage:play-fill" width={30} />
+//                     </span>
+//                 ) : (
+//                     <span className={cx(css.icon, css.pause_icon)} onClick={handleVideoIconClick}>
+//                         <Iconify icon="lets-icons:stop-fill" width={30} />
+//                     </span>
+//                 )}
+//             </div>
+//         </section>
+//     );
+// };
+
+// export default AboutUs;
 
 
 // 'use client'

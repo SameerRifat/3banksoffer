@@ -23,9 +23,10 @@ const Navbar = () => {
             <header className={cx('custom_container', css.navbar)}>
                 <div className={css.menu_icon} onClick={() => setOpenSidebar((prevState) => !prevState)}>
                     <Iconify
-                        icon="basil:menu-outline"
+                        // icon="basil:menu-outline"
+                        icon="heroicons-outline:menu-alt-1"
                         // color="#D9F6FF"
-                        width={40}
+                        width={45}
                     />
                 </div>
                 <div className={css.navlinks}>

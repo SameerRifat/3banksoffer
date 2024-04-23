@@ -1,8 +1,9 @@
 .navbar {
-    height: 70px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    // border: 2px solid red;
 }
 
 .navlinks {
@@ -15,14 +16,15 @@
     color: var(--text-secondary);
 }
 
-.logo{
-    >a{
+.logo {
+    >a {
         color: var(--black);
     }
+
     margin: 0 3rem;
 }
 
-.menu_icon{
+.menu_icon {
     display: none;
 }
 
@@ -30,30 +32,46 @@
     .navlinks {
         display: none;
     }
+
     .menu_icon {
         display: block;
-        width: 35px;
-        height: 35px;
-        font-size: 30px;
+        // width: 35px;
+        // height: 35px;
+        // font-size: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 6px;
         cursor: pointer;
         transition: all 0.3s;
-        >svg{
+
+        >svg {
             color: var(--text-secondary);
+            width: 45px;
+            height: 45px;
         }
     }
-    .navbar{
+
+    .navbar {
         justify-content: flex-start;
     }
-    .logo{
+
+    .logo {
         margin: 0 auto;
     }
 }
-@media (max-width: 500px) {
-    .navbar{
-        height: 60px;
+
+// @media (max-width: 500px) {
+//     .navbar {
+//         height: 60px;
+//     }
+// }
+
+@media (max-width: 400px) {
+    .menu_icon{
+        >svg{
+            width: 40px;
+            height: 40px;
+        }
     }
 }
