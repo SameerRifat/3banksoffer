@@ -66,6 +66,7 @@ const HeroSection = () => {
                                     alt='hero image'
                                     width={350}
                                     height={350}
+                                    quality={100}
                                 />
                             </div>
                         </div>

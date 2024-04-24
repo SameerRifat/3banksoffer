@@ -41,6 +41,7 @@ const Testimonials = () => {
                 src={'/testimonials_bg.png'}
                 alt='background image'
                 fill
+                quality={100}
                 priority={true}
                 className={css.image_bg}
             />

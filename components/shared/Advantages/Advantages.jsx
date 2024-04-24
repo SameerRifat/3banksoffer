@@ -38,6 +38,7 @@ const Advantages = () => {
                 src={'/advantages/bg.png'}
                 alt='background image'
                 fill
+                quality={100}
                 priority={true}
                 className={css.image_bg}
             />

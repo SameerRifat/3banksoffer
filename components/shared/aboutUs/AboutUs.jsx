@@ -74,6 +74,7 @@ const AboutUs = () => {
                             src={'/about_ellipse.svg'}
                             alt='ellipse'
                             fill
+                            quality={100}
                             priority={true}
                             className={css.image_bg}
                         />
@@ -90,6 +91,7 @@ const AboutUs = () => {
                                 alt='quotes'
                                 width={35}
                                 height={22}
+                                quality={100}
                                 priority={true}
                                 className={css.quotes}
                             />

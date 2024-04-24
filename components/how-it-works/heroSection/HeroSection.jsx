@@ -29,6 +29,7 @@ const HeroSection = () => {
                 alt='background image'
                 fill
                 priority={true}
+                quality={100}
                 className={css.image_bg}
             />
             <div className={cx('custom_container', css.sub_container)}>

@@ -18,6 +18,7 @@ const HowItWorks = () => {
           alt='background image'
           fill
           priority={true}
+          quality={100}
           className={css.image_bg}
         />
         <AboutUs />
