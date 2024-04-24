@@ -1,24 +1,8 @@
-import Image from "next/image";
 import styles from "./page.module.css";
-import HeroSection from "@/components/heroSection/HeroSection";
-import HowItWorks from "@/components/howItWorks/HowItWorks";
-import Testimonials from "@/components/testimonials/Testimonials";
-import MapSection from "@/components/mapSection/MapSection";
-import AboutUs from "@/components/aboutUs/AboutUs";
-import Advantages from "@/components/Advantages/Advantages";
-import GetOffers from "@/components/getOffers/GetOffers";
-// import HeroSection from "@/components/heroSection/heroSection";
+import LandingPage from "@/components/landingPage/LandingPage";
 
 export default function Home() {
   return (
-    <>
-      <HeroSection />
-      <HowItWorks />
-      <Testimonials />
-      <MapSection />
-      <AboutUs />
-      <Advantages />
-      <GetOffers />
-    </>
+    <LandingPage />
   );
 }

@@ -3,7 +3,7 @@
 import React from 'react'
 import css from './heroSection.module.scss'
 import cx from 'classnames'
-import Navbar from '../shared/navbar/Navbar'
+import Navbar from '@/components/shared/navbar/Navbar'
 import Image from 'next/image'
 import Iconify from '@/components/shared/iconify/iconify'
 import Link from 'next/link'
@@ -52,7 +52,7 @@ const HeroSection = () => {
                             ))}
                         </div>
                         <div className={css.btn_container}>
-                            <Link href='#' className={css.hero_btn}>
+                            <Link href='#' className={cx("hero_btn")}>
                                 Order 3 non-binding offers
                             </Link>
                             <span className={css.small_text}>It’s way simple</span>

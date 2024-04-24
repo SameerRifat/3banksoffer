@@ -1,9 +1,10 @@
 :root {
   --max-width: 1250px;
 
-  --primary-color: #005F31;
+  --color-primary: #005F31;
   --text-primary: #686868;
-  --text-secondary: rgba(0, 0, 0, 0.44);
+  --text-secondary: rgba(0, 0, 0, 0.59);
+  /* --text-secondary: rgba(0, 0, 0, 0.44); */
   --black: #263238;
   --white: #fff;
   /* --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
@@ -37,6 +38,24 @@ a {
   text-decoration: none;
 }
 
-ul {
+/* ul {
   list-style: none;
+} */
+
+.hero_btn {
+  background: var(--color-primary);
+  padding: 0.6rem 2.5rem;
+  color: var(--white);
+  border-radius: 2rem;
+  font-family: var(--font-poppins);
+  text-align: center;
+  text-wrap: wrap;
+  display: inline-block;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  border: 1px solid var(--color-primary);
+}
+.hero_btn:hover{
+  background-color: var(--white);
+  color: var(--color-primary);
 }

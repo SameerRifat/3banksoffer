@@ -35,7 +35,7 @@ const Navbar = () => {
                             (pathname.includes(navlink.route) && navlink.route.length > 1) ||
                             pathname === navlink.route;
                         return (
-                            <Link key={navlink.label} href={navlink.route} className={`${css.navlink} ${isActive && 'boder_gradient_bottom'}`}>
+                            <Link key={navlink.label} href={navlink.route} className={`${css.navlink} ${isActive && css.active_link}`}>
                                 {navlink.label} {isActive}
                             </Link>
                         )
@@ -52,7 +52,7 @@ const Navbar = () => {
                             (pathname.includes(navlink.route) && navlink.route.length > 1) ||
                             pathname === navlink.route;
                         return (
-                            <Link key={navlink.label} href={navlink.route} className={`${css.navlink} ${isActive && 'boder_gradient_bottom'}`}>
+                            <Link key={navlink.label} href={navlink.route} className={`${css.navlink} ${isActive && css.active_link}`}>
                                 {navlink.label} {isActive}
                             </Link>
                         )
@@ -92,7 +92,7 @@ export default Navbar
 //                             (pathname.includes(navlink.route) && navlink.route.length > 1) ||
 //                             pathname === navlink.route;
 //                         return (
-//                             <Link key={navlink.label} href={navlink.route} className={`${css.navlink} ${isActive && 'boder_gradient_bottom'}`}>
+//                             <Link key={navlink.label} href={navlink.route} className={`${css.navlink} ${isActive && css.active_link}`}>
 //                                 {navlink.label} {isActive}
 //                             </Link>
 //                         )
