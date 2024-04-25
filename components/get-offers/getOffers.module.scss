@@ -1,0 +1,241 @@
+.get_offers_container {
+    max-width: 700px;
+    border: 1px solid #005f3136;
+    border-radius: 20px;
+    padding: 2rem;
+    // padding-bottom: 3rem;
+    text-align: left;
+    margin: 4rem auto 5rem auto;
+}
+
+.heading {
+    font-weight: 600 !important;
+    text-align: left !important;
+}
+
+.question_number {
+    color: var(--text-primary);
+    margin: 1.5rem 0;
+}
+
+.question {
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 2rem;
+}
+
+.input_wrapper {
+    border-bottom: 1px solid #005f3136;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-left: 1rem;
+    // margin-top: 2rem;
+    // margin-bottom: 1rem;
+
+    >input {
+        border: none;
+        outline: none;
+        padding: 0.7rem;
+        width: 100%;
+        color: var(--text-primary);
+        font-size: 1rem;
+    }
+}
+
+.options {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 1rem;
+
+    .option {
+        background: #f2f2f2;
+        border: 2px solid #f2f2f2;
+        padding: 1.5rem;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+
+        >img {
+            width: 20px;
+            height: 20px;
+            border-radius: 100%;
+            object-fit: cover;
+        }
+
+        &::before {
+            content: '';
+            width: 15px;
+            height: 15px;
+            border: 3px solid #a3afbf;
+            border-radius: 100%;
+        }
+    }
+
+    .option.selected {
+        border: 2px solid var(--color-primary);
+
+        &::before {
+            border: 3px solid var(--color-primary);
+        }
+    }
+}
+
+.step_6_option {
+    // border: 2px solid red;
+    margin-bottom: 1rem;
+    &:last-child{
+        margin-bottom: initial;
+    }
+
+    >h6 {
+        margin-bottom: 0.5rem;
+        color: var(--black);
+    }
+
+    >li {
+        background: #f2f2f2;
+        border: 2px solid #f2f2f2;
+        padding: 1.4rem;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        // cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        color: var(--black);
+        font-size: 1.2rem;
+        >svg{
+            cursor: pointer;
+        }
+        .euro_sign{
+            font-size: 1.4rem;
+        }
+    }
+}
+
+.options.scrollable {
+    max-height: 500px;
+    overflow-y: auto;
+    padding-bottom: 0.3rem;
+    padding-right: 0.3rem;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar {
+        background: 0 0;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: hsla(0, 1%, 41%, 0.893);
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #888;
+        border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: hsla(0, 1%, 41%, 0.658);
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #f1f1f1;
+        border-radius: 4px;
+    }
+
+}
+
+.show_all {
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+    width: fit-content;
+    margin-top: 1.5rem;
+    cursor: pointer;
+    font-size: 14px;
+
+    .dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        background-color: var(--color-primary);
+        margin-right: 3px;
+
+        &:last-child {
+            margin-right: 10px;
+        }
+    }
+}
+
+.btn {
+    border: none;
+    outline: navajowhite;
+    background: var(--color-primary);
+    width: 100%;
+    padding: 1rem 2.5rem;
+    color: var(--white);
+    border-radius: 4px;
+    font-family: var(--font-poppins);
+    text-align: center;
+    text-wrap: wrap;
+    display: inline-block;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    cursor: pointer;
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .get_offers_container {
+        padding: 1.5rem;
+        border-radius: 10px;
+        margin-top: 3rem;
+    }
+
+    .options {
+        .option {
+            padding: 1rem;
+            border-radius: 7px;
+
+            &::before {
+                width: 13px;
+                height: 13px;
+                min-width: 13px;
+                min-height: 13px;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .get_offers_container {
+        padding: 1rem;
+    }
+
+    .options {
+        .option {
+            &::before {
+                width: 12px;
+                height: 12px;
+                min-width: 12px;
+                min-height: 12px;
+            }
+        }
+    }
+}

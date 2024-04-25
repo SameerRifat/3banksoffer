@@ -6,6 +6,7 @@ import AboutUs from '@/components/shared/aboutUs/AboutUs'
 import Image from 'next/image'
 import Advantages from '@/components/shared/Advantages/Advantages'
 import GetOffers from '@/components/shared/getOffers/GetOffers'
+import Faq from './faq/Faq'
 
 const HowItWorks = () => {
   return (
@@ -23,6 +24,7 @@ const HowItWorks = () => {
         />
         <AboutUs />
       </div>
+      <Faq />
       <Advantages />
       <GetOffers />
     </>
