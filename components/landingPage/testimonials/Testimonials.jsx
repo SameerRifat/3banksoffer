@@ -3,7 +3,7 @@
 import React from 'react'
 import css from './testimonials.module.scss'
 import cx from 'classnames'
-import { SectionHeading } from '@/components/shared/SectionHeading/SectionHeading'
+import { SectionHeading, SmallHeading } from '@/components/shared/SectionHeading/SectionHeading'
 import Image from 'next/image'
 import Slides from './slides/Slides'
 import { motion } from "framer-motion";
@@ -98,11 +98,11 @@ const Testimonials = () => {
                 </div>
                 <div className={cx(css.column2)}>
                     <div className={css.testimonical_card}>
-                        <h4 className={cx("typoH4", css.card_heading)}>
+                        <SmallHeading extraStyles={css.card_heading}>
                             This is how customers rate {" "}
                             <br />
                             3bankoffers.com
-                        </h4>
+                        </SmallHeading>
                         <Slides />
                     </div>
                 </div>

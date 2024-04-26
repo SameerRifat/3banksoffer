@@ -1,0 +1,113 @@
+.container {
+    border: 4px solid red;
+    margin-top: 5rem;
+    // margin-bottom: 5rem;
+    position: relative;
+}
+
+.image_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -999;
+}
+
+.columns {
+    display: flex;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding-bottom: 12rem;
+}
+
+.column1 {
+    width: 50%;
+    border: 2px solid blue;
+    padding-top: 7rem;
+
+    .heading {
+        text-align: left;
+        margin-bottom: 1.2rem;
+    }
+
+    .description {
+        color: var(--text-primary);
+        max-width: 400px;
+    }
+
+    .card {
+        border: 1px solid var(--color-primary);
+        border-radius: 10px;
+        width: 100%;
+        max-width: 400px;
+        padding: 48px 20px 40px 20px;
+        background: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+        margin-top: 2.5rem;
+        margin-bottom: 4rem;
+
+        .small_heading {
+            font-size: 1.3rem;
+        }
+    }
+
+    .btn_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 400px;
+
+        .contact_btn {
+            padding-left: 4rem;
+            padding-right: 4rem;
+        }
+    }
+}
+
+.column2 {
+    width: 50%;
+    // height: 1200px;
+    border: 2px solid blue;
+    // .map_images{
+    //     border: 4px solid black;
+    // }
+    .img_container{
+        width: 100%;
+        height: 900px;
+        border: 2px solid red;
+        >img{
+            width: 100% !important;
+            height: fit-content !important;
+            // object-fit: contain;
+            border: 4px solid black;
+        }
+    }
+}
+
+// .map_wrapper {
+//     position: absolute;
+//     left: 50%;
+//     top: 0;
+//     border: 2px solid yellow;
+//     width: 100%;
+//     height: 100%;
+
+//     .img_container {
+//         border: 2px solid black;
+//         width: 100%;
+//         height: 540px;
+//         position: relative;
+        
+//         >img {
+//             position: absolute;
+//             top: 0;
+//             right: 0;
+//             width: 100%;
+//         }
+//     }
+// }

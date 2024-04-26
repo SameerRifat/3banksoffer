@@ -63,7 +63,7 @@ const Step = ({ optionsData, stepValue, onChange, currentStep, setCurrentStep })
             {(currentStep == 1 || currentStep == 2) && (
                 <div className={css.input_wrapper}>
                     <Iconify icon="bitcoin-icons:search-filled" width={25} />
-                    <input type="search" placeholder='Choose country' value={search} onChange={(e) => setSearch(e.target.value)} />
+                    <input type="search" placeholder={`Choose ${currentStep === 1 ? 'country' : 'industry'}`} value={search} onChange={(e) => setSearch(e.target.value)} />
                 </div>
             )}
             <ul className={cx(css.options, optionsData.options.length > 5 && css.scrollable)}>
