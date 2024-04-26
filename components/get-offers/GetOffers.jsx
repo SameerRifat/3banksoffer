@@ -66,7 +66,7 @@ const GetOffers = () => {
                     />
                 )}
                 {currentStep === 7 && (
-                    <ContactDetails initialValues={contactDetailsData}/>
+                    <ContactDetails initialValues={contactDetailsData} updateContactDetails={(data) => console.log('data: ', data)}/>
                 )}
             </div>
         </>

@@ -11,23 +11,43 @@ import Iconify from '@/components/shared/iconify/iconify'
 const testimonialsData = [
     {
         _id: 1,
-        description: 'Ajamaker provides best features to organize your expenses in one application and save more money Ajamaker provides best features to organize your expenses in one application and save more money provides best features to organize your expenses in one application and save more money',
-        name: 'Lena Larsen',
-        date: 'April 10, 2026'
+        description: 'Really good experience with getting 3 bank offers. Easy and fast process, good follow up.',
+        name: 'Elena Johnson',
+        date: 'May 15, 2023'
     },
     {
         _id: 2,
-        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis voluptatibus unde nihil quia et nisi, minus aperiam ullam. Voluptatum, accusamus porro? Dolorem id, culpa saepe aliquid optio error provides best features to organize your expenses in one application and save more money',
-        name: 'John Doe',
-        date: 'March 04, 2023'
+        description: 'Application is easy and straightforward, there is great support from 3bankoffers.com',
+        name: 'John Smith',
+        date: 'February 28, 2023'
     },
     {
         _id: 3,
-        description: ' recusandae veritatis distinctio commodi, omnis est a molestiae odit numquam debitis tenetur, fuga odio minus accusantium velit veniam ab! quae maiores eaque recusandae veritatis distinctio commodi, omnis est.provides best features to organize your expenses in one application and save more money',
-        name: 'Grayson',
-        date: 'June 29, 2024'
+        description: 'It worked well, and I got an IBAN in 24 hours with their VIP service.',
+        name: 'Grace Lee',
+        date: 'July 10, 2022'
     },
-]
+    {
+        _id: 4,
+        description: 'Amazing experience, got offers from 3 friendly and trustworthy banks.',
+        name: 'Alexander Brown',
+        date: 'March 29, 2023'
+    },
+    {
+        _id: 5,
+        description: 'Quick to get back, easy communication, great execution.',
+        name: 'Sophia Williams',
+        date: 'April 5, 2022'
+    },
+    {
+        _id: 6,
+        description: 'Quick and efficient help to find useful banks.',
+        name: 'Michael Davis',
+        date: 'January 20, 2024'
+    },
+];
+
+
 
 const Slides = () => {
     let sliderRef = useRef(null);
@@ -61,11 +81,11 @@ const Slides = () => {
                         {testimonialsData.map((item) => {
                             return (
                                 <div className={`${css.tetimonial}`} key={item._id}>
-                                    <p className={cx("typoBody1", css.description)}>
+                                    <p className={cx("typoSubtitle1", css.description)}>
                                         {item.description}
                                     </p>
                                     <p className={cx('typoBody1', css.name)}>{item.name}</p>
-                                    <p className={cx('typoCaption', css.date)}>{item.date}</p>
+                                    <p className={cx('typoBody1', css.date)}>{item.date}</p>
                                 </div>
                             )
                         })}

@@ -12,7 +12,11 @@ import {
 } from 'react-international-phone';
 import 'react-international-phone/style.css';
 
-const ContactDetails = ({ initialValues }) => {
+const ContactDetails = ({ initialValues, updateContactDetails }) => {
+    const onSubmit = async (values, { setSubmitting, resetForm }) => {
+        console.log('values: ', values)
+        updateContactDetails(values)
+    };
     return (
         <>
             <SectionHeading extraStyles={css.heading}>
@@ -25,7 +29,7 @@ const ContactDetails = ({ initialValues }) => {
                 <Formik
                     initialValues={initialValues}
                     validationSchema={contactDetailsSchema}
-                // onSubmit={onSubmit}
+                    onSubmit={onSubmit}
                 >
                     {({ isSubmitting, values, setFieldValue }) => (
                         <Form className={css.form}>

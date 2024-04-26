@@ -93,12 +93,6 @@
     }
 }
 
-@media (max-width: 950px) {
-    .testimonical_card {
-        padding: 1rem;
-    }
-}
-
 @media (max-width: 800px) {
     .testimonials_container {
         padding-bottom: 0;
@@ -157,5 +151,16 @@
             width: 70px;
             height: 70px;
         }
+    }
+}
+
+@media (max-width: 400px) {
+    .testimonical_card {
+        padding: 1.5rem;
+    }
+}
+@media (max-width: 300px) {
+    .testimonical_card {
+        padding: 1.5rem 1rem;
     }
 }
