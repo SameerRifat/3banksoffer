@@ -5,18 +5,19 @@ import cx from 'classnames'
 
 const mapsData = [
     {
-        heading: '3bankoffers.com in  Copenhagen',
-        description: <>Antonigade 4
-            <br />
-            1106, Kobenhavn K</>,
-        mapSrc: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1549.2123765160654!2d-77.1099308!3d39.0512334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cc2ec94dd327%3A0x4a6cc2fbd0961fb1!2sCapital%20Auto%20Upfitters%20%26%20Protective%20Coatings!5e0!3m2!1sen!2s!4v1711469197399!5m2!1sen!2s'
+        heading: 'Meydan Free Zone',
+        description: '5842+632 Meydan Hotel - Nad Al Sheba - Nad Al Sheba 1 - Dubai - United Arab Emirates',
+        mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3611.3840580330134!2d55.30029820000001!3d25.156506699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69270f5612c3%3A0x2d7e43041843e7d8!2sMeydan%20Free%20Zone!5e0!3m2!1sen!2s!4v1714237694686!5m2!1sen!2s"
     },
     {
-        heading: '3bankoffers.com in  Dubai',
-        description: <>Antonigade 4
-            <br />
-            1106, Kobenhavn K</>,
-        mapSrc: 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1549.2123765160654!2d-77.1099308!3d39.0512334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7cc2ec94dd327%3A0x4a6cc2fbd0961fb1!2sCapital%20Auto%20Upfitters%20%26%20Protective%20Coatings!5e0!3m2!1sen!2s!4v1711469197399!5m2!1sen!2s'
+        heading: 'Easy Solutions',
+        description: 'Erhvervsvej 21, 2610 Rødovre, Denmark',
+        mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.485843695926!2d12.4294782!3d55.69792629999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4652515653b1a1dd%3A0xef3eb29763f24b19!2sEasy%20Solutions!5e0!3m2!1sen!2s!4v1714237864455!5m2!1sen!2s"
+    },
+    {
+        heading: 'Virtual Office Canary Wharf - Virtual HQ',
+        description: 'Suite 6, Beaufort Court, Admirals Way, London E14 9XL, United Kingdom',
+        mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6520216977246!2d-0.0201982!3d51.5012529!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487603a3e09b0fdb%3A0x23a569e5b614c3c9!2sVirtual%20Office%20Canary%20Wharf%20-%20Virtual%20HQ!5e0!3m2!1sen!2s!4v1714237938194!5m2!1sen!2s"
     },
 ]
 
