@@ -27,7 +27,7 @@ const MapSection = () => {
                         priority
                     />
                 </div>
-                <Tooltip id={`tooltip-1`} place='right-end' delayShow={300} delayHide={300} arrowColor="#fff" className={css.tooltip} >
+                <Tooltip id={`tooltip-1`} place='right-end' delayShow={300} delayHide={1} arrowColor="#fff" className={css.tooltip} >
                     <TooltipContent title={"Copenhagen"} descrption1={"Lorem Ispum Lorem ispum lorem ispum"} descrption2={"Lorem Ispum Lorem ispum lorem ispum"}/>
                 </Tooltip>
                 <div className={cx(css.location, css.location2)} data-tooltip-id={`tooltip-2`}>
@@ -40,7 +40,7 @@ const MapSection = () => {
                         priority
                     />
                 </div>
-                <Tooltip id={`tooltip-2`} place='right-end' delayShow={300} delayHide={300} arrowColor="#fff" className={css.tooltip} >
+                <Tooltip id={`tooltip-2`} place='right-end' delayShow={300} delayHide={1} arrowColor="#fff" className={css.tooltip} >
                     <TooltipContent title={"Copenhagen"} descrption1={"Lorem Ispum Lorem ispum lorem ispum"} descrption2={"Lorem Ispum Lorem ispum lorem ispum"}/>
                 </Tooltip>
                 <div className={cx(css.location, css.location3)} data-tooltip-id={`tooltip-3`}>
@@ -53,7 +53,7 @@ const MapSection = () => {
                         priority
                     />
                 </div>
-                <Tooltip id={`tooltip-3`} place='right-end' delayShow={300} delayHide={0} arrowColor="#fff" className={css.tooltip} >
+                <Tooltip id={`tooltip-3`} place='right-end' delayShow={300} delayHide={1} arrowColor="#fff" className={css.tooltip} >
                     <TooltipContent title={"Copenhagen"} descrption1={"Lorem Ispum Lorem ispum lorem ispum"} descrption2={"Lorem Ispum Lorem ispum lorem ispum"}/>
                 </Tooltip>
                 <div className={css.card_img_container}>

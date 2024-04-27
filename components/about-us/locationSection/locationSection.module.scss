@@ -526,3 +526,23 @@
         }
     }
 }
+
+.tooltip {
+    background: white !important;
+    border-radius: 10px !important;
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.03) !important;
+    opacity: 1 !important;
+    z-index: 99;
+    max-width: 230px;
+    // animation: fadeIn 1s ease forwards;
+}
+.tooltip_content {
+    .title {
+        color: var(--color-primary);
+    }
+
+    .descrption {
+        color: var(--text-primary);
+        font-size: 11px;
+    }
+}
