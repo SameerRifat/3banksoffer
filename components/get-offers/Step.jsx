@@ -56,7 +56,7 @@ const Step = ({ optionsData, stepValue, onChange, currentStep, setCurrentStep })
     return (
         <>
             <SectionHeading extraStyles={css.heading}>
-                Take a quick quiz to get a more precise quote
+                Take a quiz to get a more precise quote
             </SectionHeading>
             <p className={cx('typoBody2', css.question_number)}>{currentStep} of 6</p>
             <h6 className={cx("typoH6", css.question)}>{optionsData.question}</h6>

@@ -17,7 +17,7 @@ const MapSection = () => {
                 </SectionHeading>
             </div>
             <div className={css.map_images}>
-                <div className={cx(css.location, css.map1)} data-tooltip-id={`tooltip-1`}>
+                <div className={cx(css.location, css.location1)} data-tooltip-id={`tooltip-1`}>
                     <Image
                         src={'/mapSection/map1.png'}
                         alt='map'
@@ -30,7 +30,7 @@ const MapSection = () => {
                 <Tooltip id={`tooltip-1`} place='right-end' delayShow={300} delayHide={300} arrowColor="#fff" className={css.tooltip} >
                     <TooltipContent title={"Copenhagen"} descrption1={"Lorem Ispum Lorem ispum lorem ispum"} descrption2={"Lorem Ispum Lorem ispum lorem ispum"}/>
                 </Tooltip>
-                <div className={cx(css.location, css.map2)} data-tooltip-id={`tooltip-2`}>
+                <div className={cx(css.location, css.location2)} data-tooltip-id={`tooltip-2`}>
                     <Image
                         src={'/mapSection/map2.png'}
                         alt='map'
@@ -43,7 +43,7 @@ const MapSection = () => {
                 <Tooltip id={`tooltip-2`} place='right-end' delayShow={300} delayHide={300} arrowColor="#fff" className={css.tooltip} >
                     <TooltipContent title={"Copenhagen"} descrption1={"Lorem Ispum Lorem ispum lorem ispum"} descrption2={"Lorem Ispum Lorem ispum lorem ispum"}/>
                 </Tooltip>
-                <div className={cx(css.location, css.map3)} data-tooltip-id={`tooltip-3`}>
+                <div className={cx(css.location, css.location3)} data-tooltip-id={`tooltip-3`}>
                     <Image
                         src={'/mapSection/map3.png'}
                         alt='map'

@@ -16,7 +16,7 @@ const LocationSection = () => {
                 priority={true}
                 className={css.image_bg}
             />
-            <div className={cx('custom_container', css.columns)}>
+            <div className={cx(css.columns)}>
                 <div className={css.column1}>
                     <SectionHeading extraStyles={css.heading}>
                         We are up for grabs
@@ -38,13 +38,43 @@ const LocationSection = () => {
                 </div>
                 <div className={css.column2}>
                     <div className={css.map_images}>
+                        <div className={cx(css.location, css.location1)}>
+                            <Image
+                                src={'/mapSection/map1.png'}
+                                alt='map'
+                                width={120}
+                                height={120}
+                                quality={100}
+                                priority
+                            />
+                        </div>
+                        <div className={cx(css.location, css.location2)}>
+                            <Image
+                                src={'/mapSection/map2.png'}
+                                alt='map'
+                                width={120}
+                                height={120}
+                                quality={100}
+                                priority
+                            />
+                        </div>
+                        <div className={cx(css.location, css.location3)}>
+                            <Image
+                                src={'/mapSection/map3.png'}
+                                alt='map'
+                                width={120}
+                                height={120}
+                                quality={100}
+                                priority
+                            />
+                        </div>
                         <div className={css.img_container}>
                             <Image
-                                src={'/map.svg'}
+                                src={'/map-full.png'}
                                 alt='map'
                                 // fill
-                                width={600}
-                                height={600}
+                                width={950}
+                                height={565}
                                 quality={100}
                                 priority
                             />
@@ -52,21 +82,6 @@ const LocationSection = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className={css.map_wrapper}>
-                <div className={css.map_images}>
-                    <div className={css.img_container}>
-                        <Image
-                            src={'/map.svg'}
-                            alt='map'
-                            fill
-                            // width={600}
-                            // height={600}
-                            quality={100}
-                            priority
-                        />
-                    </div>
-                </div>
-            </div> */}
         </div>
     )
 }

@@ -11,12 +11,9 @@ const FaqItem = ({ question, answer, isOpen, onClick }) => {
     const contentHeight = useRef()
     return (
         <div className={css.wrapper} >
-            {/* <button className={`question-container ${isOpen ? 'active' : ''}`} onClick={onClick} > */}
             <button className={cx('typoH6', css.question_container, isOpen && css.active)} onClick={onClick} >
                 <Iconify icon="octicon:plus-16" width={25} />
                 <p className={css.question_content}>{question}</p>
-                {/* <RiArrowDropDownLine className={`arrow ${isOpen ? 'active' : ''}`} />  */}
-                {/* <RiArrowDropDownLine className={cx('arrow', isOpen && css.active)} />  */}
             </button>
 
             <div ref={contentHeight} className={css.answer_container} style={
@@ -24,7 +21,6 @@ const FaqItem = ({ question, answer, isOpen, onClick }) => {
                     ? { height: contentHeight.current.scrollHeight }
                     : { height: "0px" }
             }>
-                {/* <p className={cx('typoBody1', css.answer_content)}>{answer}</p> */}
                 {answer}
             </div>
         </div>

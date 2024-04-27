@@ -1,8 +1,7 @@
 .container {
-    border: 4px solid red;
     margin-top: 5rem;
-    // margin-bottom: 5rem;
     position: relative;
+    overflow-y: hidden;
 }
 
 .image_bg {
@@ -15,17 +14,18 @@
 }
 
 .columns {
-    display: flex;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    padding-bottom: 12rem;
+    height: 850px;
+    padding-left: 5%;
 }
 
 .column1 {
-    width: 50%;
-    border: 2px solid blue;
-    padding-top: 7rem;
+    padding-top: 8rem;
+    width: 100%;
+    max-width: 625px;
+    margin-left: auto;
 
     .heading {
         text-align: left;
@@ -70,44 +70,459 @@
 }
 
 .column2 {
-    width: 50%;
-    // height: 1200px;
-    border: 2px solid blue;
-    // .map_images{
-    //     border: 4px solid black;
-    // }
-    .img_container{
-        width: 100%;
-        height: 900px;
-        border: 2px solid red;
-        >img{
-            width: 100% !important;
-            height: fit-content !important;
-            // object-fit: contain;
-            border: 4px solid black;
-        }
+    padding-top: 2rem;
+    overflow: hidden;
+}
+
+.map_images {
+    height: fit-content;
+    margin-top: auto;
+    position: relative;
+}
+
+.img_container {
+    height: 100%;
+
+    >img {
+        height: auto;
     }
 }
 
-// .map_wrapper {
-//     position: absolute;
-//     left: 50%;
-//     top: 0;
-//     border: 2px solid yellow;
-//     width: 100%;
-//     height: 100%;
+.location {
+    position: absolute;
+    border: 4px solid #005F31;
+    border-radius: 100%;
 
-//     .img_container {
-//         border: 2px solid black;
-//         width: 100%;
-//         height: 540px;
-//         position: relative;
-        
-//         >img {
-//             position: absolute;
-//             top: 0;
-//             right: 0;
-//             width: 100%;
-//         }
-//     }
-// }
+    &::after {
+        content: '';
+        width: 14px;
+        height: 14px;
+        background: #005F31;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 100%);
+        clip-path: polygon(50% 100%, 6.7% 25%, 93.3% 25%);
+    }
+
+    >img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+    }
+}
+
+.location.location1 {
+    top: -3%;
+    left: 20%;
+    width: 110px;
+    height: 110px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+.location.location2 {
+    top: 11%;
+    left: 2%;
+    width: 95px;
+    height: 95px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+.location.location3 {
+    top: 37.5%;
+    left: 37.5%;
+    width: 95px;
+    height: 95px;
+    transition: all 0.3s ease;
+
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+@media (min-width: 1400px) {
+    .columns {
+        padding-left: 2%;
+    }
+}
+
+@media (min-width: 1500px) {
+    .location.location1 {
+        left: 18%;
+    }
+
+    .location.location3 {
+        left: 32.5%;
+    }
+}
+@media (min-width: 1700px) {
+    .location.location1 {
+        left: 16%;
+    }
+
+    .location.location3 {
+        left: 29.5%;
+    }
+}
+@media (min-width: 1800px) {
+    .location.location1 {
+        left: 15%;
+    }
+
+    .location.location3 {
+        left: 27.5%;
+    }
+}
+@media (min-width: 1900px) {
+    .location.location1 {
+        left: 13%;
+    }
+
+    .location.location2 {
+        left: 1.3%;
+    }
+
+    .location.location3 {
+        left: 24.5%;
+    }
+}
+@media (min-width: 2100px) {
+    .location.location1 {
+        left: 10%;
+    }
+
+    .location.location2 {
+        left: 1.3%;
+    }
+
+    .location.location3 {
+        left: 18%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .location.location3 {
+        // top: 37.5%;
+        left: 39%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .location.location1 {
+        top: -2%;
+    }
+
+    .location.location3 {
+        left: 41%;
+    }
+}
+
+@media (max-width: 1150px) {
+    .location.location3 {
+        left: 46%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .location.location1 {
+        top: -3%;
+        left: 27%;
+    }
+
+    .location.location3 {
+        left: 50%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .location.location3 {
+        left: 53%;
+    }
+}
+
+@media (max-width: 900px) {
+    .location.location1 {
+        left: 30%;
+    }
+
+    .location.location3 {
+        left: 57%;
+    }
+}
+
+@media (max-width: 850px) {
+    .location.location1 {
+        left: 32%;
+    }
+
+    .location.location2 {
+        left: 4%;
+    }
+
+    .location.location3 {
+        left: 63%;
+    }
+}
+
+@media (max-width: 800px) {
+    .columns {
+        grid-template-columns: 1fr;
+        height: fit-content;
+        gap: 4rem;
+    }
+
+    .column1 {
+        padding-top: 0;
+        margin-left: 0;
+        width: 100%;
+        padding-right: 5%;
+        max-width: 100%;
+
+        .card {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 3rem;
+        }
+
+        .btn_wrapper {
+            max-width: 100%;
+        }
+    }
+
+    .column2 {
+        overflow-x: hidden;
+    }
+
+    .img_container {
+        >img {
+            width: 800px;
+        }
+    }
+
+    .location.location1 {
+        width: 90px;
+        height: 90px;
+        top: -2%;
+        left: 14%;
+    }
+
+    .location.location2 {
+        width: 80px;
+        height: 80px;
+        top: 11%;
+        left: 1.5%;
+    }
+
+    .location.location3 {
+        width: 80px;
+        height: 80px;
+        top: 38%;
+        left: 26%;
+    }
+}
+
+@media (max-width: 750px) {
+    .location.location1 {
+        left: 16%;
+    }
+
+    .location.location3 {
+        left: 28%;
+    }
+}
+
+@media (max-width: 700px) {
+    .location.location1 {
+        left: 16%;
+    }
+
+    .location.location3 {
+        left: 31%;
+    }
+}
+
+@media (max-width: 650px) {
+    .location.location1 {
+        left: 18%;
+    }
+
+    .location.location3 {
+        left: 33%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column1 {
+        .btn_wrapper {
+            .contact_btn {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+    }
+
+    .column2 {
+        overflow-x: hidden;
+    }
+
+    .img_container {
+        >img {
+            width: 700px;
+        }
+    }
+
+    .location.location1 {
+        top: -5%;
+        left: 16%;
+    }
+
+    .location.location2 {
+        top: 9%;
+        left: 0.7%;
+    }
+
+    .location.location3 {
+        top: 36%;
+        left: 30%;
+    }
+}
+
+@media (max-width: 550px) {
+    .location.location1 {
+        left: 19%;
+    }
+
+    .location.location3 {
+        left: 33%;
+    }
+}
+
+@media (max-width: 500px) {
+    .location.location1 {
+        left: 21%;
+    }
+
+    .location.location3 {
+        left: 37%;
+    }
+}
+
+@media (max-width: 450px) {
+    .location.location1 {
+        left: 23%;
+    }
+
+    .location.location3 {
+        left: 41.5%;
+    }
+}
+
+@media (max-width: 400px) {
+    .column1 {
+        .card {
+            padding: 40px 10px 40px 10px;
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
+
+            .small_heading {
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    .location {
+        border: 3px solid #005F31;
+
+        &::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    .location.location1 {
+        width: 80px;
+        height: 80px;
+        top: -2%;
+        left: 26%;
+    }
+
+    .location.location2 {
+        width: 65px;
+        height: 65px;
+        top: 12.5%;
+        left: 3.5%;
+    }
+
+    .location.location3 {
+        width: 65px;
+        height: 65px;
+        top: 39.5%;
+        left: 49%;
+    }
+}
+
+@media (max-width: 360px) {
+    .location.location1 {
+        top: -2%;
+        left: 28%;
+    }
+
+    .location.location3 {
+        left: 52%;
+    }
+}
+
+@media (max-width: 330px) {
+    .location.location1 {
+        top: -2.5%;
+        left: 30%;
+    }
+
+    .location.location3 {
+        left: 57%;
+    }
+}
+
+@media (max-width: 300px) {
+    .location.location1 {
+        left: 34%;
+    }
+
+    .location.location2 {
+        left: 4.5%;
+    }
+
+    .location.location3 {
+        left: 64%;
+    }
+}
+
+@media (max-width: 270px) {
+    .location.location1 {
+        left: 36%;
+    }
+
+    .location.location3 {
+        left: 70%;
+    }
+}
+
+@media (max-width: 280px) {
+    .column1 {
+        .card {
+            .small_heading {
+                font-size: 1rem;
+            }
+        }
+    }
+}
