@@ -44,7 +44,7 @@ a {
 
 .hero_btn {
   background: var(--color-primary);
-  padding: 0.6rem 2.5rem;
+  padding: 0.5rem 2.5rem;
   color: var(--white);
   border-radius: 2rem;
   font-family: var(--font-poppins);
