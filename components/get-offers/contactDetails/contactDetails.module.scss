@@ -112,6 +112,9 @@
 .submit_btn{
     grid-column: span 12;
     margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 700px) {

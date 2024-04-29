@@ -8,6 +8,7 @@ import { data } from './data';
 import MoneyInAndOut from './MoneyInAndOut';
 import ContactDetails from './contactDetails/ContactDetails';
 import { contactDetailInitialValues } from '@/lib/formValidations';
+import Success from './success/Success';
 
 const GetOffers = () => {
     const [currentStep, setCurrentStep] = useState(1);
@@ -41,11 +42,10 @@ const GetOffers = () => {
         { key: 'experience', field: 'experience' },
         { key: 'physicalPresence', field: 'physicalPresence' },
     ];
-    console.log('contactDetailsData: ', contactDetailsData)
 
     return (
         <>
-            <div className={cx('custom_container', css.get_offers_container)}>
+            <div className={cx('custom_container', css.get_offers_container, currentStep === 8 && css.green_border)}>
                 {currentStep < 6 && (
                     <Step
                         optionsData={data[steps[currentStep - 1].key]}
@@ -66,7 +66,16 @@ const GetOffers = () => {
                     />
                 )}
                 {currentStep === 7 && (
-                    <ContactDetails initialValues={contactDetailsData} updateContactDetails={(data) => console.log('data: ', data)}/>
+                    <ContactDetails 
+                        initialValues={contactDetailsData} 
+                        formData={formData} 
+                        updateContactDetails={(data) => console.log('data: ', data)}
+                        currentStep={currentStep}
+                        setCurrentStep={setCurrentStep}
+                    />
+                )}
+                {currentStep === 8 && (
+                    <Success />
                 )}
             </div>
         </>

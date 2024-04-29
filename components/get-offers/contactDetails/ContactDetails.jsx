@@ -11,11 +11,37 @@ import {
     parseCountry,
 } from 'react-international-phone';
 import 'react-international-phone/style.css';
+import { sendEmail } from '@/lib/actions/sendEmail'
+import { toast } from 'react-hot-toast';
 
-const ContactDetails = ({ initialValues, updateContactDetails }) => {
+const ContactDetails = ({ initialValues, updateContactDetails, formData, currentStep, setCurrentStep }) => {
     const onSubmit = async (values, { setSubmitting, resetForm }) => {
-        console.log('values: ', values)
-        updateContactDetails(values)
+        // console.log('values: ', values)
+        // console.log('formData: ', formData)
+        // updateContactDetails(values)
+        const dataToSubmit = {
+            formData,
+            contactDetails: values,
+        };
+
+        try {
+            // await sendEmail(dataToSubmit);
+            const { data, error } = await sendEmail(dataToSubmit);
+
+            if (!error) {
+                resetForm();
+                toast.success("Data sent successfully");
+                // onFormSubmit();
+                setCurrentStep(currentStep + 1)
+            } else {
+                throw new Error("Failed to send request");
+            }
+        } catch (error) {
+            console.log(error.message || "Something went wrong")
+            // toast.error(error.message || "Something went wrong");
+        } finally {
+            setSubmitting(false);
+        }
     };
     return (
         <>
@@ -97,11 +123,10 @@ const ContactDetails = ({ initialValues, updateContactDetails }) => {
                                 </div>
                                 <button
                                     className={cx(styles.btn, css.submit_btn)}
-                                    // onClick={() => setCurrentStep(currentStep + 1)}
-                                    // disabled={!stepValue}
+                                    disabled={isSubmitting}
                                     type='submit'
                                 >
-                                    Submit
+                                    {isSubmitting ? <span className='loader' /> : 'Submit'}
                                 </button>
                             </div>
                         </Form>
