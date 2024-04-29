@@ -8,7 +8,7 @@ const data = [
     {
         _id: 1,
         iconImage: '/add-on-service/icon1.svg',
-        title: <>Maximum 3, <br /> business days</>,
+        title: <>Maximum 3 <br /> business days</>,
     },
     {
         _id: 2,
@@ -18,7 +18,7 @@ const data = [
     {
         _id: 3,
         iconImage: '/add-on-service/icon3.svg',
-        title: <>Best available rate, <br /> negotiated</>,
+        title: <>Best available rate <br /> negotiated</>,
     },
 ]
 
