@@ -94,8 +94,8 @@ const TooltipContent = ({ title, address, description }) => {
     return (
       <div className={cx(css.tooltip_content)}>
         <h6 className={cx('typoH6', css.title)}>{title}</h6>
-        <p className={cx('typoCaption', css.descrption)}><b>Address :</b> {address}</p>
-        {/* <p className={cx('typoCaption', css.descrption)}><b>Register number :</b> {description}</p> */}
+        <p className={cx('typoCaption', css.descrption)}><b>Address:</b> {address}</p>
+        <p className={cx('typoCaption', css.descrption)}><b>Register number:</b> {description}</p>
       </div>
     )
   }

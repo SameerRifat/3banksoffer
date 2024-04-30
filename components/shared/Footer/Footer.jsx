@@ -45,7 +45,7 @@ const Footer = () => {
                 </div>
                 <div className={css.footer_row2}>
                     <p className={css.copy_right}>
-                        @2024  3banksoffer.com. All rights reserved. | <Link href={`/privacy-policy`}>Privacy policy</Link> | <Link href={`/terms-and-conditions`}>Terms and Conditions</Link>
+                        @2024  3bankoffers.com. All rights reserved. | <Link href={`/privacy-policy`}>Privacy policy</Link> | <Link href={`/terms-and-conditions`}>Terms and Conditions</Link>
                     </p>
                     <div className={css.social_links}>
                         {socialLinks.map((link, index) => (

@@ -34,11 +34,11 @@ const AboutHero = () => {
                 <video className={css.video} poster='/thumbnail2.jpg' ref={videoRef} controls={isClicked ? true : false}>
                     <source src="/video2.mp4" type="video/mp4" />
                 </video>
-                {!isClicked && (
+                {/* {!isClicked && (
                     <span className={css.icon} onClick={handleVideoIconClick}>
                         <Iconify icon="mage:play-fill" width={35} />
                     </span>
-                )}
+                )} */}
             </div>
         </div>
     )

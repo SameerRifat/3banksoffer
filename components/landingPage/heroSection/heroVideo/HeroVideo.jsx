@@ -19,10 +19,10 @@ const HeroVideo = ({ open, setOpen }) => {
                     type: "video",
                     width: 1280,
                     height: 720,
-                    poster: "/thumbnail.jpg",
+                    poster: "/this-is-how-it-works.png",
                     sources: [
                         {
-                            src: "/video.mp4",
+                            src: "/this-is-how-it-works.mp4",
                             type: "video/mp4",
                         },
                     ],

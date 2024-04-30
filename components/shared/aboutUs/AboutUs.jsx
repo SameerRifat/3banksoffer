@@ -56,8 +56,8 @@ const AboutUs = () => {
                 <SectionHeading>What do the banks say about us</SectionHeading>
             </div>
             <div className={css.video_wrapper}>
-                <video className={css.video} poster='/video_thumbnail.png' ref={videoRef} onEnded={handleVideoEnded} onError={handleVideoError}>
-                    <source src="/video2.mp4" type="video/mp4" />
+                <video className={css.video} poster='/this-is-how-it-works.png' ref={videoRef} onEnded={handleVideoEnded} onError={handleVideoError}>
+                    <source src="/this-is-how-it-works.mp4" type="video/mp4" />
                 </video>
                 {!isVideoPlaying ? (
                     <span className={css.icon} onClick={handleVideoIconClick}>

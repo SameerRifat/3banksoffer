@@ -15,7 +15,7 @@ const FooterLinks = () => {
     const contactInfo = [
         {
             icon: "ri:home-2-fill" ,
-            title: '12019 Nebel St, Rockville, MD 20852',
+            title: 'Erhvervsvej 21, 2610 Rødovre, Denmark',
         },
         {
             icon: "ri:mail-fill",

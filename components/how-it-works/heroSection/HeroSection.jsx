@@ -44,8 +44,8 @@ const HeroSection = () => {
                 <div className={css.columns}>
                     <div className={css.column1}>
                         <div className={css.video_wrapper}>
-                            <video className={css.video} poster='/thumbnail2.jpg' ref={videoRef} controls={isClicked ? true : false}>
-                                <source src="/video.mp4" type="video/mp4" />
+                            <video className={css.video} poster='/this-is-how-it-works.png' ref={videoRef} controls={isClicked ? true : false}>
+                                <source src="/this-is-how-it-works.mp4" type="video/mp4" />
                             </video>
                             {!isClicked && (
                                 <span className={css.icon} onClick={handleVideoIconClick}>

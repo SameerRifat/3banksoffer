@@ -11,6 +11,7 @@ import Image from 'next/image';
 const Step = ({ optionsData, stepValue, onChange, currentStep, setCurrentStep }) => {
     const [optionsToDisplay, setOptionsToDisplay] = useState(3)
     const [search, setSearch] = useState('')
+    const [text, setText] = useState('')
 
     const [visbleOptions, setVisibleOptions] = useState(optionsData.options.slice(0, optionsToDisplay) || []);
 
@@ -31,6 +32,7 @@ const Step = ({ optionsData, stepValue, onChange, currentStep, setCurrentStep })
     }, [optionsData.options, search, optionsToDisplay]);
 
 
+
     const renderOptions = (options) => {
         return options.map((item, ind) => (
             <li
@@ -38,17 +40,23 @@ const Step = ({ optionsData, stepValue, onChange, currentStep, setCurrentStep })
                 key={ind}
                 onClick={() => onChange(item.option)}
             >
-                {item.icon && (
-                    <Image
-                        src={item.icon}
-                        alt={item.option}
-                        width={20}
-                        height={20}
-                        priority
-                        quality={100}
-                    />
+                {item.option === stepValue && stepValue === 'Others' ? (
+                    <input type="text" value={text} placeholder={`Enter${!visbleOptions[0].icon ? ' Industry' : ' Country'}`} onChange={(e) => setText(e.target.value)} className={css.text_input} />
+                ) : (
+                    <>
+                        {item.icon && (
+                            <Image
+                                src={item.icon}
+                                alt={item.option}
+                                width={20}
+                                height={20}
+                                priority
+                                quality={100}
+                            />
+                        )}
+                        {item.option}
+                    </>
                 )}
-                {item.option}
             </li>
         ));
     };
@@ -88,8 +96,15 @@ const Step = ({ optionsData, stepValue, onChange, currentStep, setCurrentStep })
             )}
             <button
                 className={css.btn}
-                onClick={() => setCurrentStep(currentStep + 1)}
-                disabled={!stepValue}
+                onClick={() => {
+                    if (stepValue === 'Others') {
+                        onChange(text);
+                        setText('')
+                    }
+                    setCurrentStep(currentStep + 1);
+                }}
+                // disabled={(!stepValue || (stepValue === 'Others')) && !text} 
+                disabled={(!stepValue || stepValue === 'Others') && (!text || text.length < 3)}
             >
                 Continue
             </button>

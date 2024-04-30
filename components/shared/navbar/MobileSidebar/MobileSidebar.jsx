@@ -16,7 +16,6 @@ const MobileSidebar = ({ openSidebar, setOpenSidebar }) => {
     const handleClickOutside = () => {
         setOpenSidebar(false);
     };
-    console.log('openSidebar: ', openSidebar)
 
     return (
         <OutsideClickHandler onOutsideClick={handleClickOutside}>
