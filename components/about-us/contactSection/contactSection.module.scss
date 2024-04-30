@@ -8,7 +8,6 @@
 
 .contact_left {
     width: 70%;
-    // border: 2px solid blue;
 }
 
 .heading {
@@ -24,6 +23,10 @@
 
 .description {
     color: var(--text-primary);
+    >a{
+        color: var(--color-primary);
+        font-weight: 500;
+    }
 
     @media (max-width: 780px) {
         >br {

@@ -9,11 +9,11 @@ import Image from 'next/image'
 
 const Footer = () => {
     const socialLinks = [
-        { icon: "ri:linkedin-box-fill", href: '/www.linkedin.com' },
-        { icon: "ri:twitter-x-fill", href: '/www.twitter.com' },
-        { icon: "ri:facebook-circle-fill", href: "https://www.facebook.com/" },
-        { icon: "ri:youtube-fill", href: '/www.youtube.com' },
-        { icon: "ri:instagram-fill", href: 'https://www.instagram.com/' },
+        { icon: "ri:linkedin-box-fill", href: 'https://www.linkedin.com/in/cphrana/' },
+        // { icon: "ri:twitter-x-fill", href: '/www.twitter.com' },
+        { icon: "ri:facebook-circle-fill", href: "https://www.facebook.com/haroon.rana.5/" },
+        { icon: "ri:youtube-fill", href: 'https://youtube.com/@HaroonRanabusiness?si=3wwDd6Xh5zQ-69T0' },
+        { icon: "ri:instagram-fill", href: 'https://www.instagram.com/cphrana/' },
     ];
     return (
         <footer className={css.footer}>
@@ -36,7 +36,9 @@ const Footer = () => {
                             /> */}
                         </Link>
                         <p>
-                            Based in Leander, Texas, our team of skilled technicians are dedicated to providing amazing service for all your truck customization needs
+                            {/* Based in Leander, Texas, our team of skilled technicians are dedicated to providing amazing service for all your truck customization needs */}
+                            3bankoffers.com's head office is located in Copenhagen, and we
+                            opened offices in London in 2023 and Dubai in 2024.
                         </p>
                     </div>
                     <FooterLinks />

@@ -12,11 +12,11 @@ const BankDetails = () => {
                 </SectionHeading>
                 <div>
                     <h6 className={cx('typoH6')}>Account ( Danske Bank )</h6>
-                    <p className={cx('typoBody1')}>3001 0012813627</p>
+                    <p className={cx('typoBody1')}>0323331787001</p>
                 </div>
                 <div>
                     <h6 className={cx('typoH6')}>CVR-number</h6>
-                    <p className={cx('typoBody1')}>26832624</p>
+                    <p className={cx('typoBody1')}>241743501</p>
                 </div>
             </div>
         </section>

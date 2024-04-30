@@ -24,8 +24,8 @@ const FooterLinks = () => {
         },
         {
             icon: "ri:phone-fill",
-            title: '301-304-1419',
-            link: 'tel:+3013041419'
+            title: '+45 71651281',
+            link: 'tel:+4571651281'
         }
     ]
 
