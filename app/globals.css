@@ -21,6 +21,9 @@
   -webkit-font-smoothing: antialiased !important;
   font-feature-settings: "clig" off, "liga" off;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 /* body {
   background: var(--background-color);

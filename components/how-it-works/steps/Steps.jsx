@@ -1,8 +1,11 @@
+'use client'
+
 import React from 'react'
 import css from './steps.module.scss'
 import cx from 'classnames'
 import Link from 'next/link'
 import Image from 'next/image'
+import { SectionHeading } from '@/components/shared/SectionHeading/SectionHeading'
 
 const data = [
     {
@@ -44,7 +47,17 @@ const data = [
 
 const Steps = () => {
     return (
-        <section className={cx('custom_container', css.steps_container)}>
+        <section
+            id="Steps"
+            className={cx('custom_container', css.steps_container)}
+        >
+            <SectionHeading extraStyles={css.steps_heading}>
+                How easy it is to get an offer for your {" "}
+                <br />
+                business in
+                <br />
+                4 simple steps
+            </SectionHeading>
             {data.map((item) => {
                 return (
                     <div className={css.step} key={item._id}>
@@ -88,7 +101,7 @@ const Steps = () => {
                 <h4 className={cx("typoH4", css.bottom_heading)}>
                     Haven’t submitted an assignment yet
                 </h4>
-                <Link href='#' className={cx("hero_btn", css.btn)}>
+                <Link href='/get-offers' className={cx("hero_btn", css.btn)}>
                     Get 3 non-binding offers
                 </Link>
             </div>

@@ -164,15 +164,39 @@
             border-radius: 5px;
         }
 
-        >svg {
-            color: var(--white);
-            width: 40px;
-            height: 40px;
+        .icon {
             position: absolute;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+            background: #79255cda;
+            z-index: 99;
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            &:hover{
+                scale: 1.1;
+                box-shadow: 0 0 3px rgba(0, 0, 0, 0.11);
+            }
+            >svg{
+                color: var(--white);
+            }
         }
+
+        // >svg {
+        //     color: var(--white);
+        //     width: 40px;
+        //     height: 40px;
+        //     position: absolute;
+        //     left: 50%;
+        //     top: 50%;
+        //     transform: translate(-50%, -50%);
+        // }
     }
 }
 
@@ -319,11 +343,23 @@
             border: none;
             box-shadow: none;
             border-radius: 100%;
+            transition: all 0.3s;
+            &:hover{
+                scale: 1.1;
+                box-shadow: 0 0 3px rgba(0, 0, 0, 0.11);
+            }
 
             >img {
                 display: none;
             }
 
+            .icon{
+                background: none;
+                &:hover{
+                    box-shadow: none;
+                    scale: none;
+                }
+            }
             >svg {
                 width: 30px;
                 height: 30px;

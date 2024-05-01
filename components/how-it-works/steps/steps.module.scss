@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 4rem;
     // margin-bottom: 5rem;
+    scroll-behavior: smooth;
 }
 
 .step {
@@ -165,6 +166,11 @@
         .heading{
             line-height: 1.3;
             font-size: 1.1rem;
+        }
+    }
+    .steps_heading{
+        >br:first-child{
+            display: none;
         }
     }
 }

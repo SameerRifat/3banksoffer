@@ -32,7 +32,7 @@ const GetOffers = () => {
                     <br />
                     businesses within 80+ industries
                 </p>
-                <Link href='#' className={css.btn}>Get 3 offers now</Link>
+                <Link href='/get-offers' className={css.btn}>Get 3 offers now</Link>
             </div>
         </section>
     )

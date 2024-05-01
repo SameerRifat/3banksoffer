@@ -52,7 +52,7 @@ const HeroSection = () => {
                             ))}
                         </div>
                         <div className={css.btn_container}>
-                            <Link href='#' className={cx("hero_btn")}>
+                            <Link href='/get-offers' className={cx("hero_btn")}>
                                 Order 3 non-binding offers
                             </Link>
                             <span className={css.small_text}>It’s way simple</span>
@@ -79,7 +79,7 @@ const HeroSection = () => {
                             </div>
                             <div className={css.video} onClick={() => setOpen(true)}>
                                 <Image
-                                    src={"/thumbnail.jpg"}
+                                    src={"/this-is-how-it-works.png"}
                                     alt='thumbnail'
                                     // fill
                                     width={200}
@@ -87,9 +87,12 @@ const HeroSection = () => {
                                     quality={100}
                                     priority
                                 />
-                                <Iconify
+                                <span className={css.icon}>
+                                    <Iconify icon="mage:play-fill" width={30} />
+                                </span>
+                                {/* <Iconify
                                     icon="mage:play-fill"
-                                />
+                                /> */}
                             </div>
                             <p className={cx("typoBody2", css.video_text, css.video_text2)}>
                                 This is how it works

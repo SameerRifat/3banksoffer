@@ -29,11 +29,14 @@ const Footer = () => {
                 <div className={css.footer_row1}>
                     <div className={css.company_info}>
                         <Link href='/' className={css.logo}>
-                            <h3>Main Logo</h3>
-                            {/* <img
-                                src='/cu-logo.svg'
+                            <Image
+                                src={'/logo2.png'}
                                 alt='logo'
-                            /> */}
+                                width={100}
+                                height={100}
+                                quality={100}
+                                priority
+                            />
                         </Link>
                         <p>
                             {/* Based in Leander, Texas, our team of skilled technicians are dedicated to providing amazing service for all your truck customization needs */}

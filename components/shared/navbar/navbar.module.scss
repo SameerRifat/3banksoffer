@@ -1,9 +1,8 @@
 .navbar {
-    height: 80px;
+    height: 110px;
     display: flex;
     align-items: center;
     justify-content: center;
-    // border: 2px solid red;
 }
 
 .navlinks {
@@ -38,11 +37,13 @@
 
 .logo {
     >a {
-        color: var(--black);
-        font-weight: 600;
+        >img{
+            width: 70px;
+            height: auto;
+        }
     }
 
-    margin: 0 3rem;
+    margin: 0 4rem;
 }
 
 .menu_icon {
@@ -75,10 +76,16 @@
 
     .navbar {
         justify-content: flex-start;
+        height: 90px;
     }
 
     .logo {
         margin: 0 auto;
+        >a {
+            >img{
+                width: 60px;
+            }
+        }
     }
 }
 
@@ -93,6 +100,19 @@
         >svg{
             width: 40px;
             height: 40px;
+        }
+    }
+}
+@media (max-width: 350px) {
+    .navbar{
+        height: 80px;
+    }
+    .logo {
+        margin: 0 auto;
+        >a {
+            >img{
+                width: 50px;
+            }
         }
     }
 }

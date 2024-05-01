@@ -8,6 +8,7 @@ import { usePathname } from 'next/navigation'
 import Iconify from "@/components/shared/iconify/iconify";
 import { navLinks } from './navData'
 import MobileSidebar from './MobileSidebar/MobileSidebar'
+import Image from 'next/image'
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -43,7 +44,14 @@ const Navbar = () => {
                 </div>
                 <div className={css.logo}>
                     <Link href='/'>
-                        Main Logo
+                        <Image 
+                            src={'/logo2.png'}
+                            alt='logo'
+                            width={100}
+                            height={100}
+                            quality={100}
+                            priority
+                        />
                     </Link>
                 </div>
                 <div className={css.navlinks}>

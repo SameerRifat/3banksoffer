@@ -22,6 +22,7 @@ const HeroSection = () => {
             }
         }
     };
+
     return (
         <div className={css.how_it_works_container}>
             <Image
@@ -69,10 +70,10 @@ const HeroSection = () => {
                     </div>
                 </div>
                 <div className={css.btns}>
-                    <p className={cx("typoBody1", css.btn1)}>
+                    <a href='#Steps' className={cx("typoBody1", css.btn1)}>
                         See how simple it is
                         <Iconify icon="tabler:arrow-down" width={15} />
-                    </p>
+                    </a>
                     <Link href='#' className={cx("hero_btn", css.link)}>
                         Order 3 non-binding offers
                     </Link>
