@@ -74,7 +74,7 @@ const HeroSection = () => {
                         See how simple it is
                         <Iconify icon="tabler:arrow-down" width={15} />
                     </a>
-                    <Link href='#' className={cx("hero_btn", css.link)}>
+                    <Link href='/get-offers' className={cx("hero_btn", css.link)}>
                         Order 3 non-binding offers
                     </Link>
                 </div>
