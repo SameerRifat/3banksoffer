@@ -16,10 +16,6 @@ export const data = {
                 icon: '/flags/at.svg',
             },
             {
-                option: 'Argentina',
-                icon: '/flags/ar.svg',
-            },
-            {
                 option: 'Belgium',
                 icon: '/flags/be.svg',
             },
