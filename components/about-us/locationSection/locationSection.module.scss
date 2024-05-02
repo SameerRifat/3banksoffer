@@ -571,6 +571,13 @@
 
 
     .location.location3 {
+        left: 50%;
+    }
+}
+@media (max-width: 420px) {
+
+
+    .location.location3 {
         left: 51.5%;
     }
 }
