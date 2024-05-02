@@ -30,7 +30,7 @@ const Footer = () => {
                     <div className={css.company_info}>
                         <Link href='/' className={css.logo}>
                             <Image
-                                src={'/logo2.png'}
+                                src={'/logo3.png'}
                                 alt='logo'
                                 width={100}
                                 height={100}
