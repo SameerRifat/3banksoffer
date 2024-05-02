@@ -21,7 +21,7 @@ const FaqItem = ({ question, answer, isOpen, onClick }) => {
                     ? { height: contentHeight.current.scrollHeight }
                     : { height: "0px" }
             }>
-                {answer}
+                <p className={cx('typoBody1', css.answer_content)}>{answer}</p>
             </div>
         </div>
     )

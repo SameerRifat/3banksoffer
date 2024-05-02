@@ -10,9 +10,9 @@ import Link from 'next/link'
 import HeroVideo from './heroVideo/HeroVideo'
 
 const benefits = [
-    "Easy - Fast - 3 construction offers",
-    "Over 6,50,000 meditated tasks",
-    "Skilled craftsman throughout the country"
+    "Easy - fast 3 non-binding offers",
+    "Free service",
+    "Bank guarantees"
 ]
 
 const HeroSection = () => {
@@ -33,9 +33,9 @@ const HeroSection = () => {
                 <div className={cx('custom_container', css.hero)}>
                     <div className={css.hero_left}>
                         <h2 className={cx('typoH2', css.hero_title)}>
-                            Find the right one for your {" "}
-                            {/* <br /> */}
-                            project - Get 3 banks offers
+                            Get 3 bank offers {" "}
+                            <br />
+                            for free
                         </h2>
                         <div className={css.benefits}>
                             {benefits?.map((item, ind) => (
