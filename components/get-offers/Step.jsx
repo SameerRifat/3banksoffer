@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react'
 import css from './getOffers.module.scss'
 import cx from 'classnames'
-import { SectionHeading } from '@/components/shared/SectionHeading/SectionHeading'
+import { SectionHeading, SmallHeading } from '@/components/shared/SectionHeading/SectionHeading'
 import Iconify from '@/components/shared/iconify/iconify';
 // import { optionsData } from './data';
 import Image from 'next/image';
@@ -63,9 +63,9 @@ const Step = ({ optionsData, stepValue, onChange, currentStep, setCurrentStep })
 
     return (
         <>
-            <SectionHeading extraStyles={css.heading}>
+            <SmallHeading extraStyles={css.heading}>
                 Take a quiz to get a more precise quote
-            </SectionHeading>
+            </SmallHeading>
             <p className={cx('typoBody2', css.question_number)}>{currentStep} of 6</p>
             <h6 className={cx("typoH6", css.question)}>{optionsData.question}</h6>
             {(currentStep == 1 || currentStep == 2) && (

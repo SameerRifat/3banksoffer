@@ -9,6 +9,8 @@ import MoneyInAndOut from './MoneyInAndOut';
 import ContactDetails from './contactDetails/ContactDetails';
 import { contactDetailInitialValues } from '@/lib/formValidations';
 import Success from './success/Success';
+import { SectionHeading } from '../shared/SectionHeading/SectionHeading';
+import Image from 'next/image';
 
 const GetOffers = () => {
     const [currentStep, setCurrentStep] = useState(1);
@@ -45,38 +47,56 @@ const GetOffers = () => {
 
     return (
         <>
-            <div className={cx('custom_container', css.get_offers_container, currentStep === 8 && css.green_border)}>
-                {currentStep < 6 && (
-                    <Step
-                        optionsData={data[steps[currentStep - 1].key]}
-                        stepValue={formData[steps[currentStep - 1].field]}
-                        onChange={(value) => handleChange(steps[currentStep - 1].field, value)}
-                        currentStep={currentStep}
-                        setCurrentStep={setCurrentStep}
-                    />
-                )}
-                {currentStep === 6 && (
-                    <MoneyInAndOut 
-                        stepValue1={formData.moneyIn}
-                        stepValue2={formData.moneyOut}
-                        onChange1={(value) => handleChange('moneyIn', value)}
-                        onChange2={(value) => handleChange('moneyOut', value)}
-                        currentStep={currentStep}
-                        setCurrentStep={setCurrentStep}
-                    />
-                )}
-                {currentStep === 7 && (
-                    <ContactDetails 
-                        initialValues={contactDetailsData} 
-                        formData={formData} 
-                        updateContactDetails={(data) => console.log('data: ', data)}
-                        currentStep={currentStep}
-                        setCurrentStep={setCurrentStep}
-                    />
-                )}
-                {currentStep === 8 && (
-                    <Success />
-                )}
+            <div className={css.parent_container}>
+               <Image
+                    src={'/testimonials_bg.png'}
+                    alt='background image'
+                    fill
+                    quality={100}
+                    priority={true}
+                    className={css.image_bg}
+                />
+                <div className={cx('custom_container')}>
+                  <SectionHeading>
+                     You are few clicks away to get 3 banks offers
+                  </SectionHeading>
+                  <div className={cx(css.get_offers_card, currentStep === 8 && css.green_border)}>
+                    {currentStep < 6 && (
+                        <Step
+                            optionsData={data[steps[currentStep - 1].key]}
+                            stepValue={formData[steps[currentStep - 1].field]}
+                            onChange={(value) => handleChange(steps[currentStep - 1].field, value)}
+                            currentStep={currentStep}
+                            setCurrentStep={setCurrentStep}
+                        />
+                    )}
+                    {currentStep === 6 && (
+                        <MoneyInAndOut 
+                            stepValue1={formData.moneyIn}
+                            stepValue2={formData.moneyOut}
+                            onChange1={(value) => handleChange('moneyIn', value)}
+                            onChange2={(value) => handleChange('moneyOut', value)}
+                            currentStep={currentStep}
+                            setCurrentStep={setCurrentStep}
+                        />
+                    )}
+                    {currentStep === 7 && (
+                        <ContactDetails 
+                            initialValues={contactDetailsData} 
+                            formData={formData} 
+                            updateContactDetails={(data) => console.log('data: ', data)}
+                            currentStep={currentStep}
+                            setCurrentStep={setCurrentStep}
+                        />
+                    )}
+                    {currentStep === 8 && (
+                        <Success />
+                    )}
+                  </div>
+                  <p className={cx("typoBody1", css.description)}>
+                   *We need the answers to above basic information to match you with 3 banks  
+                   </p>
+                </div>
             </div>
         </>
     );
