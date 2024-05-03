@@ -64,8 +64,8 @@ const HeroSection = () => {
                                 <Image
                                     src={'/hero_image2.png'}
                                     alt='hero image'
-                                    width={350}
-                                    height={350}
+                                    width={450}
+                                    height={450}
                                     quality={100}
                                 />
                             </div>
