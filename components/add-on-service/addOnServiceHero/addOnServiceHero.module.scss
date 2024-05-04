@@ -5,6 +5,10 @@
     gap: 2rem;
 }
 
+.add_to_cart_btn {
+    cursor: pointer;
+}
+
 .hero_left {
     width: 60%;
 
@@ -88,6 +92,7 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
+            cursor: pointer;
         }
     }
 
